@@ -6,64 +6,123 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms and Tables</title>
+    <style>
+        #main-container {
+            margin: auto;
+            width: 50%;
+            border: 3px solid rgb(53, 55, 53);
+            padding: 24px 24px;
+
+        }
+    </style>
 </head>
 
 <body>
-    <h2> Here is your Pet Summary! </h2>
-    <table>
-        <thead>
-            <tr>
-                <th rowspan="2">Pet Names</td>
-                <th rowspan="2">Pet Age</th>
-                <th colspan="2"> Weight</th>
-            </tr>
-            <tr>
-                <th>Lbs.</th>
-                <th>Kg.</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Baker</td>
-                <td>9</td>
-                <td> 45 </td>
-                <td>86</td>
-            </tr>
-            <tr>
-                <td>Camila</td>
-                <td>2</td>
-                <td> 45 </td>
-                <td>86</td>
-            </tr>
-            <tr>
-                <td>Luna</td>
-                <td>1</td>
-                <td> 45 </td>
-                <td>86</td>
-            </tr>
-            <tr>
-                <td>Bella</td>
-                <td>7</td>
-                <td> 45 </td>
-                <td>86</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <th>
-                    Total Pet Age
-                </th>
-                <td>
-                    19
-                </td>
-            </tr>
-        </tfoot>
-    </table>
+    <div id="main-container">
+        <h2> Here is your Pet Summary! </h2>
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">Pet Names</td>
+                    <th rowspan="2">Pet Age</th>
+                    <th colspan="2"> Weight</th>
+                </tr>
+                <tr>
+                    <th>Lbs.</th>
+                    <th>Kg.</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Baker</td>
+                    <td>9</td>
+                    <td> 45 </td>
+                    <td>86</td>
+                </tr>
+                <tr>
+                    <td>Camila</td>
+                    <td>2</td>
+                    <td> 45 </td>
+                    <td>86</td>
+                </tr>
+                <tr>
+                    <td>Luna</td>
+                    <td>1</td>
+                    <td> 45 </td>
+                    <td>86</td>
+                </tr>
+                <tr>
+                    <td>Bella</td>
+                    <td>7</td>
+                    <td> 45 </td>
+                    <td>86</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>
+                        Total Pet Age
+                    </th>
+                    <td>
+                        19
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
 
-    <form>
-        <input type="search">
+        <!-- the action attribute specifies WHERE the form data should be sent-->
+        <div class="login-container">
+            <form action="" method="">
+                <p>
+                    <label for="username"> Username:</label>
+                    <!--name refers to the value submitted by the user ;received as a tuple pair which is used by the server (name, value)-->
+                    <input type="text" name="username" id="username">
+                </p>
+                <p>
+                    <label for="password"> Password:</label>
+                    <input type="password" name="password" id="password">
+                </p>
+                <label for="yes-user">Check if you a registered user?</label>
+                <input type="checkbox" name="registered-user" id="yes-user" value="yes">
+                <p>
+                    <!-- Default behavior of a button inside a form is to submit -->
+                    <button>Submit</button>
+                </p>
+            </form>
+            <h2> Google Search </h2>
+            <form action="https://www.google.com/search">
+                <label for="search-term"> What do you want to search on Google? </label>
+                <input type="text" name="q" id="search-term">
+                <button>Submit</button>
 
-    </form>
+            </form>
+
+            <h2> YouTube Search </h2>
+            <form action="https://www.youtube.com/results">
+                <label for="youtube-search-term"> What do you want to search on YouTube? </label>
+                <input type="text" name="search_query" id="youtube-search-term">
+                <button>Submit</button>
+            </form>
+        </div>
+        <h2>Contact Info</h2>
+        <form>
+            <div>
+                <!-- here id is used to connect label with input element-->
+                <!-- name is used to create radio button groups-->
+                <input type="radio" id="contactChoice1" name="contact" value="email" checked>
+                <label for="contactChoice1">Email</label>
+
+                <input type="radio" id="contactChoice2" name="contact" value="phone">
+                <label for="contactChoice2">Phone</label>
+
+                <input type="radio" id="contactChoice3" name="contact" value="mail">
+                <label for="contactChoice3">Mail</label>
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
 </body>
 
 </html>
