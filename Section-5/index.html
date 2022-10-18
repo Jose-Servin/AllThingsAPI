@@ -76,11 +76,11 @@
                 <p>
                     <label for="username"> Username:</label>
                     <!--name refers to the value submitted by the user ;received as a tuple pair which is used by the server (name, value)-->
-                    <input type="text" name="username" id="username">
+                    <input type="text" name="username" id="username" placeholder="Username">
                 </p>
                 <p>
                     <label for="password"> Password:</label>
-                    <input type="password" name="password" id="password">
+                    <input type="password" name="password" id="password" placeholder="Password">
                 </p>
                 <label for="yes-user">Check if you a registered user?</label>
                 <input type="checkbox" name="registered-user" id="yes-user" value="yes">
@@ -117,6 +117,20 @@
 
                 <input type="radio" id="contactChoice3" name="contact" value="mail">
                 <label for="contactChoice3">Mail</label>
+            </div>
+            <h3> Pet Information </h3>
+            <div>
+                <label for="pet-select">Choose a pet:</label>
+
+                <select name="pets" id="pet-select">
+                    <option value="">--Please choose an option--</option>
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                    <option value="hamster">Hamster</option>
+                    <option value="parrot">Parrot</option>
+                    <option value="spider">Spider</option>
+                    <option value="goldfish">Goldfish</option>
+                </select>
             </div>
             <div>
                 <button type="submit">Submit</button>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marathon Registration</title>
+</head>
+
+<body>
+    <main>
+
+        <h1>Race Registration! </h1>
+
+        <form action="">
+            <div>
+                <label for="first-name">First Name </label>
+                <input type="text" name="" id="first-name" required>
+                <label for="last-name">Last Name </label>
+                <input type="text" name="" id="last-name" required>
+            </div>
+
+            <div>
+                <!-- here id is used to connect label with input element-->
+                <!-- name is used to create radio button groups-->
+                <p>Select a Race: </p>
+                <input type="radio" id="fun-run" name="race" value="fun-run" checked>
+                <label for="fun-run">Fun Run 5K</label>
+                <br>
+
+                <input type="radio" id="half-marathon" name="race" value="half-marathon">
+                <label for="half-marathon">Half Marathon</label>
+                <br>
+
+                <input type="radio" id="full-marathon" name="race" value="full-marathon">
+                <label for="full-marathon">Full Marathon</label>
+            </div>
+            <div>
+                <label for="email">Email </label>
+                <input type="email" name="" id="email" required>
+                <label for="password">Password </label>
+                <input type="password" name="" id="password">
+            </div>
+            <div>
+                <label for="age-select">Select Age Group: </label>
+
+                <select name="age" id="age-select">
+                    <option value="under-18">Under 18</option>
+                    <option value="20-35">20-35</option>
+                    <option value="over-50">50+</option>
+                </select>
+            </div>
+            <button type="submit">Register</button>
+
+        </form>
+    </main>
+
+</body>
+
+</html>
