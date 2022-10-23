@@ -1,0 +1,22 @@
+body {
+    background-color: lightblue;
+}
+
+.container {
+    background-color: lightgreen;
+    width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.original {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.offset {
+    position: absolute;
+    top: 20%;
+    left: -2%;
+}
