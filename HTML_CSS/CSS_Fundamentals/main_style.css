@@ -50,7 +50,8 @@ p {
 
 }
 
-ul, ol {
+ul,
+ol {
     margin-left: 35px;
     margin-bottom: 20px;
 }
@@ -144,6 +145,8 @@ footer p {
 .author-image {
     width: 50px;
 }
+
+
 
 /*
 .first-li {
@@ -264,7 +267,7 @@ h1::first-letter {
 }
 
 /* Adjacent sibling selector */
-h3 + p::first-letter {
+h3+p::first-letter {
     color: orange;
 }
 
@@ -401,5 +404,3 @@ article {
     gap: 75px;
     align-items: start;
 }
-
-
