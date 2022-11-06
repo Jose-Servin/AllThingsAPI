@@ -4,30 +4,41 @@ body {
 
 /* Build Container */
 .container {
-    background-color: lightgreen;
     width: 1200px;
     margin: 0 auto;
 }
 
-.flex-page {
-    display: flex;
-    gap: 48px;
-    /* We add this property to ensure the aside DOES NOT go all the way to the bottom of our page */
-    align-items: flex-start;
+.container-one {
+    background-color: black;
+    font-size: 24px;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 15px
 }
 
-
-.red {
-    background-color: rgb(241, 90, 90);
-    /* we use flex:1 to allow this element to take up all available space */
-    flex: 1;
+.el-1 {
+    background-color: red;
+    height: 100px;
 }
 
-.blue {
-    background-color: rgb(65, 65, 195);
-    flex: 0 0 300px;
+.el-2 {
+    background-color: blue;
 }
 
-.green {
-    background-color: green;
+.el-3 {
+    background-color: yellow;
+}
+
+.el-4 {
+    background-color: orange;
+    height: 100px;
+
+}
+
+.el-5 {
+    background-color: brown;
+}
+
+.el-6 {
+    background-color: blueviolet;
 }
