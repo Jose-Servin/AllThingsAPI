@@ -9,24 +9,32 @@ body {
 }
 
 .container-one {
-    background-color: black;
+    background-color: rgb(95, 92, 92);
     font-size: 24px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px;
     gap: 15px;
     height: 500px;
+    justify-content: center;
+    align-content: center;
+    /* remove these properties */
+    /* align-items: center;
+    justify-items: center; */
+
 }
 
 .el {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 
 }
 
+
 .el-1 {
     background-color: red;
+
 }
 
 .el-2 {
@@ -48,6 +56,5 @@ body {
 
 .el-6 {
     background-color: blueviolet;
-    grid-column: 2 / 4;
-    grid-row: 1;
+
 }
