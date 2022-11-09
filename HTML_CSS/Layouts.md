@@ -266,3 +266,175 @@ body {
     background-color: blueviolet;
 }
 ```
+
+## Creating a two-thirds layout
+
+!["What we call a 2/3 layout](../HTML_CSS/CSS_Fundamentals/img/two-thirds-grid.png)
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/HTML_CSS/CSS_Fundamentals/index_styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-one">
+            <div class="el el-1">One</div>
+            <div class="el el-2">Two</div>
+            <div class="el el-3">Three</div>
+            <div class="el el-4">Four</div>
+            <!-- <div class="el el-5">Five</div>
+            <div class="el el-6">Six</div> -->
+        </div>
+    </div>
+</body>
+
+</html>
+```
+
+```css
+body {
+    background-color: lightblue;
+}
+
+/* Build Container */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.container-one {
+    background-color: black;
+    font-size: 24px;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 15px;
+}
+
+.el {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.el-1 {
+    background-color: red;
+    height: 100px;
+}
+
+.el-2 {
+    background-color: blue;
+}
+
+.el-3 {
+    background-color: yellow;
+}
+
+.el-4 {
+    background-color: orange;
+    height: 100px;
+
+}
+
+.el-5 {
+    background-color: brown;
+}
+
+.el-6 {
+    background-color: blueviolet;
+}
+```
+
+## A multiple square box layout
+
+!["a square grid layout"](/HTML_CSS/CSS_Fundamentals/img/even-grid-layout.png)
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/HTML_CSS/CSS_Fundamentals/index_styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-one">
+            <div class="el el-1">One</div>
+            <div class="el el-2">Two</div>
+            <div class="el el-3">Three</div>
+            <div class="el el-4">Four</div>
+            <div class="el el-5">Five</div>
+            <div class="el el-6">Six</div>
+        </div>
+    </div>
+</body>
+
+</html>
+```
+
+```css
+body {
+    background-color: lightblue;
+}
+
+/* Build Container */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.container-one {
+    background-color: black;
+    font-size: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+    height: 400px;
+}
+
+.el {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.el-1 {
+    background-color: red;
+}
+
+.el-2 {
+    background-color: blue;
+}
+
+.el-3 {
+    background-color: yellow;
+}
+
+.el-4 {
+    background-color: orange;
+
+}
+
+.el-5 {
+    background-color: brown;
+}
+
+.el-6 {
+    background-color: blueviolet;
+}
+```
