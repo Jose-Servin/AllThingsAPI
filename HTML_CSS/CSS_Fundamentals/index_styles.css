@@ -13,9 +13,9 @@ body {
     font-size: 24px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 15px;
-    height: 400px;
+    height: 500px;
 }
 
 .el {
@@ -27,7 +27,6 @@ body {
 
 .el-1 {
     background-color: red;
-    /* height: 100px; */
 }
 
 .el-2 {
@@ -49,4 +48,6 @@ body {
 
 .el-6 {
     background-color: blueviolet;
+    grid-column: 2 / 4;
+    grid-row: 1;
 }
