@@ -1,0 +1,59 @@
+/* Global Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    width: 1280px;
+    margin: 0 auto;
+    background-color: lightslategray;
+}
+
+.nav-bar-elms {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.grid-2-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 500px;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: 'Permanent Marker', 'Inter', sans-serif;
+}
+
+.header-images {
+    background-color: orange;
+    position: relative;
+}
+
+.light-theme-code {
+    background-color: darkgreen;
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-height: 100%;
+}
+
+
+.dark-theme-code {
+    background-color: yellow;
+    position: absolute;
+    top: 7%;
+    left: 25%;
+    max-height: 100%;
+}
