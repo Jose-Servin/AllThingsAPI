@@ -15,7 +15,7 @@
 
 <body>
     <div class="main-container">
-        <div class="grid-2-col">
+        <div class="grid-2-cols">
             <p>PyWebDev.com</p>
             <nav>
                 <ul class="nav-bar-elms">
@@ -29,20 +29,122 @@
             </nav>
         </div>
 
-        <header class="grid-2-col">
-            <div class="header-text">
-                <h1>Welcome Python WebDevs</h1>
-                <p>Join the community to meet other Python Web Developers! Whether you're
+        <header class="grid-2-cols">
+            <div class="header-box">
+                <h1 class="header-title">Welcome Python WebDevs</h1>
+                <p class="header-text">Join the community to meet other Python Web Developers! Whether you're
                     searching for Docs, want to stay up to date on interesting topics like Bootstrap, Flask
                     and Frontend trends or simply want to meet other PyWebDevs - join now!
                 </p>
-                <button>Join the Community</button>
+                <button class="header-button">Join the Community</button>
             </div>
             <div class="header-images">
                 <img src="../images/light-code-sc.png" alt="light-theme-code" class="light-theme-code">
-                <img src="../images/dark-code-sc.png" alt="dark-theme-code" class="dark-theme-code">
+                <!-- <img src="../images/dark-code-sc.png" alt="dark-theme-code" class="dark-theme-code"> -->
             </div>
         </header>
+
+        <section>
+            <h2>Why develop using Python?</h2>
+            <div class="grid-3-cols">
+                <div>
+                    <h3>Rich Standard Library</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem voluptates, accusamus
+                        dignissimos molestiae, quidem doloremque tenetur nec</p>
+                </div>
+                <div>
+                    <h3>Easy and Readable</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem voluptates, accusamus
+                        dignissimos molestiae, quidem doloremque tenetur nec</p>
+                </div>
+                <div>
+                    <h3>OOP</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem voluptates, accusamus
+                        dignissimos molestiae, quidem doloremque tenetur nec</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="grid-3-cols">
+                <img src="../images/desk-full-background.jpg" alt="desk-setup">
+                <div class="testimonial-box">
+                    <h2>Simple. Elegant. Popular.</h2>
+                    <blockquote>Python is incredibly easy to read, so developers typically have no
+                        problems
+                        understanding code written by
+                        their fellow programmers. This makes the communication between developers working on the same
+                        project
+                        much more efficient.
+                    </blockquote>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>Python Frameworks</h2>
+            <div class="grid-3-cols">
+                <figure>
+                    <!-- <img src="../images/django.png" alt=""> -->
+                    <div class="framework-box">
+                        <h2>Django</h2>
+                        <ul class="framework-details">
+                            <li>
+                                <span>Great for fully-fledged web apps.</span>
+                            </li>
+                            <li>
+                                <span>Integrated with Oracle SQL, PostgreSQL, MySQL,</span>
+                            </li>
+                            <li>
+                                <span>Models-Templates-Views Architecture</span>
+                            </li>
+                        </ul>
+                        <button>Learn More</button>
+                    </div>
+
+                </figure>
+                <figure>
+                    <!-- <img src="../images/1200px-Flask_logo.svg.png" alt=""> -->
+                    <div class="framework-box">
+                        <h2>Flask</h2>
+                        <ul class="framework-details">
+                            <li>
+                                <span>Provides simple and manageable solutions.</span>
+                            </li>
+                            <li>
+                                <span>Great for lean functionality.</span>
+                            </li>
+                            <li>
+                                <span>Prototype Building solution.</span>
+                            </li>
+                        </ul>
+                        <button>Learn More</button>
+                    </div>
+
+                </figure>
+                <figure>
+                    <!-- <img src="../images/falcon.png" alt=""> -->
+                    <div class="framework-box">
+                        <h2>Falcon</h2>
+                        <ul class="framework-details">
+                            <li>
+                                <span>Minimalist ASGI/WSGI framework</span>
+                            </li>
+                            <li>
+                                <span>Encourages the REST architectural style</span>
+                            </li>
+                            <li>
+                                <span>"Do as little as possible while remaining highly effective"</span>
+                            </li>
+                        </ul>
+                        <button>Learn More</button>
+                    </div>
+
+                </figure>
+            </div>
+        </section>
+
 
     </div>
 
