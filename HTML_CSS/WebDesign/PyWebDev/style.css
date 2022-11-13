@@ -4,11 +4,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+}
+
+body {
     font-family: 'Inter', sans-serif;
     line-height: 160%;
     letter-spacing: 1px;
     background-color: whitesmoke;
-
 }
 
 .main-container {
@@ -30,8 +33,13 @@ header {
 }
 
 section {
-    margin-top: 32px;
-    margin-bottom: 32px;
+    margin-top: 48px;
+    margin-bottom: 58px;
+}
+
+footer {
+    margin-bottom: 28px;
+    font-size: 12px;
 }
 
 .nav-bar-elms {
@@ -80,6 +88,14 @@ h1 {
     font-family: 'Permanent Marker', 'Inter', sans-serif;
 }
 
+h2 {
+    margin-bottom: 18px;
+}
+
+h3 {
+    margin-bottom: 12px;
+}
+
 .header-images {
     background-color: orange;
     position: relative;
@@ -88,6 +104,8 @@ h1 {
 img {
     width: 100%;
     height: 100%;
+    /* object-fit: scale-down; */
+
 }
 
 .light-theme-code {
@@ -98,7 +116,6 @@ img {
 
 }
 
-
 .dark-theme-code {
     background-color: yellow;
     position: absolute;
@@ -106,6 +123,52 @@ img {
     left: 25%;
 }
 
-.testimonial-box {
+
+.testimonial-flex-box {
     grid-column: 2/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.testimonial-title {
+    font-family: 'Inter', sans-serif;
+}
+
+.testimonial-author {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.framework-box {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.framework-details {
+    list-style-type: circle;
+}
+
+span {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.courses-flex-box {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+}
+
+.course-1 {
+    height: 300px;
+    background-color: lightcoral;
+}
+
+.course-2 {
+    height: 300px;
+    background-color: bisque;
 }
