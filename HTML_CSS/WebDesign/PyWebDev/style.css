@@ -108,6 +108,10 @@ img {
 
 }
 
+.framework-img {
+    height: 200px;
+}
+
 .light-theme-code {
     background-color: darkgreen;
     /* position: absolute;
@@ -129,12 +133,35 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
 
 }
 
 .testimonial-title {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Permanent Marker', 'Inter', sans-serif;
+    font-size: 34px;
 }
+
+#simple {
+    color: #306998
+}
+
+#elegant {
+    color: #f1c936
+}
+
+#popular {
+    color: #646464
+}
+
+#small-python {
+    position: absolute;
+    top: 0;
+    right: 75px;
+    height: 90px;
+    width: 90px;
+}
+
 
 .testimonial-author {
     margin-top: 10px;
@@ -144,11 +171,17 @@ img {
 .framework-box {
     display: flex;
     flex-direction: column;
-
+    gap: 32px
 }
 
 .framework-details {
     list-style-type: circle;
+}
+
+.framework-title {
+    font-family: 'Permanent Marker', 'Inter', sans-serif;
+    font-size: 24px;
+
 }
 
 span {
