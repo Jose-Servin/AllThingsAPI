@@ -53,7 +53,7 @@ nav {
 
 header,
 section {
-    margin-bottom: 96px;
+    margin-bottom: 128px;
 }
 
 
@@ -105,8 +105,8 @@ h1 {
 }
 
 h2 {
-    font-size: 36px;
-    margin-bottom: 12px;
+    font-size: 32px;
+    margin-bottom: 16px;
 }
 
 h3 {
@@ -129,23 +129,23 @@ img {
 
 .button:link,
 .button:visited {
-    background-color: #306998;
-    color: white;
+    background-color: #f1c936;
+    color: black;
     text-decoration: none;
     padding: 12px 24px;
     display: inline-block;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
 }
 
 .button:hover,
 .button:active {
-    background-color: #5987ad;
-    color: white;
+    background-color: #d9b531;
+    color: black;
     text-decoration: none;
     padding: 12px 24px;
     display: inline-block;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
 }
 
@@ -166,6 +166,11 @@ img {
     position: absolute;
     top: 7%;
     left: 25%;
+}
+
+.ph {
+    font-size: 36px;
+
 }
 
 .testimonial-section {
@@ -230,7 +235,11 @@ p {
 
 
 .framework-details {
-    list-style-type: circle;
+    list-style-type: none;
+}
+
+.small-li-icon {
+    font-size: 12px;
 }
 
 .framework-title {
