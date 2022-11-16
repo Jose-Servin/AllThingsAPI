@@ -4,6 +4,17 @@ SPACING SYSTEM (px)
 
 FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+
+PYTHON COLORS
+BLUE:  #306998;
+YELLOW: #f1c936;
+GREY: #646464
+
+
+TEXT COLOR
+#343a40
+
 */
 
 /* Global Reset */
@@ -17,10 +28,10 @@ FONT SIZE SYSTEM (px)
 
 body {
     font-family: 'Inter', sans-serif;
-    line-height: 1.85em;
+    line-height: 1.6;
     letter-spacing: 1px;
-    background-color: whitesmoke;
-    color: black;
+    background-color: #fff;
+    color: #32363a;
 }
 
 .main-container {
@@ -40,18 +51,13 @@ nav {
     margin-bottom: 48px;
 }
 
-header {
-    margin-bottom: 64px;
-}
-
+header,
 section {
-    margin-bottom: 64px;
+    margin-bottom: 96px;
 }
 
-footer {
-    margin-bottom: 28px;
-    font-size: 14px;
-}
+
+
 
 .nav-bar-elms {
     display: flex;
@@ -75,20 +81,23 @@ footer {
     /* height: 500px; */
 }
 
-.header-box {
+/* .header-box {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+} */
+
+.header-title {
+    margin-top: 48px;
+    margin-bottom: 24px;
 }
 
 .header-text {
     font-size: 18px;
-
+    margin-bottom: 24px;
 }
 
-.header-button {
-    align-self: flex-start;
-}
+.header-button {}
 
 h1 {
     font-family: 'Permanent Marker', 'Inter', sans-serif;
@@ -96,13 +105,13 @@ h1 {
 }
 
 h2 {
-    font-size: 30px;
-    margin-bottom: 32px;
+    font-size: 36px;
+    margin-bottom: 12px;
 }
 
 h3 {
-    font-size: 24px;
-    margin-bottom: 12px;
+    font-size: 20px;
+    margin-bottom: 4px;
 }
 
 .header-images {
@@ -115,6 +124,29 @@ img {
     height: 100%;
     /* object-fit: scale-down; */
 
+}
+
+
+.button:link,
+.button:visited {
+    background-color: #306998;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.button:hover,
+.button:active {
+    background-color: #5987ad;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .framework-img {
@@ -136,6 +168,11 @@ img {
     left: 25%;
 }
 
+.testimonial-section {
+    background-color: #18354c;
+    color: white;
+    padding: 24px;
+}
 
 .testimonial-flex-box {
     grid-column: 2/4;
@@ -148,7 +185,6 @@ img {
 
 .testimonial-title {
     font-family: 'Permanent Marker', 'Inter', sans-serif;
-    font-size: 34px;
     margin-bottom: 10px;
 }
 
@@ -160,19 +196,16 @@ p {
 #simple {
     color: #306998;
     display: inline-block;
-    margin-bottom: 10px;
 }
 
 #elegant {
     color: #f1c936;
     display: inline-block;
-    margin-bottom: 10px;
 }
 
 #popular {
     color: #646464;
     display: inline-block;
-    margin-bottom: 10px;
 }
 
 #small-python {
@@ -201,10 +234,7 @@ p {
 }
 
 .framework-title {
-    /* font-family: 'Permanent Marker', 'Inter', sans-serif; */
-    /* letter-spacing: 3px; */
     margin-bottom: 0;
-
 }
 
 
@@ -228,4 +258,21 @@ p {
 .course-2 {
     height: 300px;
     background-color: bisque;
+}
+
+.grid-6-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 24px;
+    background-color: #18354c;
+
+}
+
+footer {
+    color: whitesmoke;
+    font-size: 14px;
+}
+
+.footer-div {
+    height: 350px;
 }
