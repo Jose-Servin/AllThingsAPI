@@ -48,7 +48,40 @@ const retired_checker = function (birthYear) {
     }
 }
 
-retired_checker(1996)
+retired_checker(1990)
 
 
 // Arrays 
+const club_members = ['Baker', 'Camila,', 'Luna', 'Bella']
+
+
+
+///// Challenge 1
+// create an arrow function that calculates the average of 3 given values 
+const calcAverage = (score_1, score_2, score_3) => {
+    const score_avg = (score_1 + score_2 + score_3) / 3;
+    return score_avg
+}
+
+
+function checkWinner(avgD, avgK) {
+    if (avgD >= 2 * avgK) {
+        console.log(`Dolphins win (${avgD} vs ${avgK})!`)
+    } else if (avgK >= 2 * avgD) {
+        console.log(`Koalas win (${avgK} vs ${avgD})!`)
+    }
+    else {
+        console.log('No Team wins!')
+    }
+}
+
+
+// Checking results for case 1
+const d_score_1 = calcAverage(44, 23, 71);
+const k_score_1 = calcAverage(65, 54, 49);
+checkWinner(d_score_1, k_score_1);
+
+// Checking results for case 2
+const d_score_2 = calcAverage(85, 54, 41);
+const k_score_2 = calcAverage(23, 34, 27);
+checkWinner(d_score_2, k_score_2);
