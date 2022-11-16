@@ -85,3 +85,26 @@ checkWinner(d_score_1, k_score_1);
 const d_score_2 = calcAverage(85, 54, 41);
 const k_score_2 = calcAverage(23, 34, 27);
 checkWinner(d_score_2, k_score_2);
+
+
+// Challenge 2 Tip Calculator 
+
+function calcTip(bill_amount) {
+    if (bill_amount >= 50 && bill_amount <= 300) {
+        const tip = bill_amount * 0.15;
+        return tip
+    } else {
+        const tip = bill_amount * 0.20;
+        return tip;
+    }
+}
+
+
+const test_data = [125, 555, 44];
+const tip_data = [
+    calcTip(test_data[0]),
+    calcTip(test_data[1]),
+    calcTip(test_data.at(- 1))
+]
+
+console.log(tip_data)
