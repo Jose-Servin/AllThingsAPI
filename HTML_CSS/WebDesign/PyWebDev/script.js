@@ -1,5 +1,5 @@
 'use strict';
-
+/*
 console.log("Hello World");
 
 function say_howdy(user) {
@@ -108,3 +108,125 @@ const tip_data = [
 ]
 
 console.log(tip_data)
+
+
+/// Create a dynamic sentence using Baker object 
+
+const Baker = {
+    age: 9,
+    firstName: "Baker",
+    home: 'Houston',
+    role: 'best good boy',
+    friends: ['Camila', 'Luna', 'Bella'],
+    sayHello: function () {
+        this.greeting = `Hello, my name is Baker, I am ${this.age} years old. Do I deserve a treat? `;
+        return this.greeting;
+    },
+    GiveTreat: true,
+    getSummary: function () {
+        this.summary = `${Baker.sayHello()}..... ${this.GiveTreat ? 'YES!' : 'NO! :('} `;
+        return this.summary;
+    }
+}
+
+// we need to run sayHello function in order to define greeting attribute for our object.
+// Baker.sayHello()
+// Now, function results are stored in our Object's attribute called greeting 
+// console.log(Baker.greeting)
+
+
+// Small Dynamic Summary Challenge
+Baker.getSummary();
+console.log(Baker.summary)
+
+
+// BMI Code Challenge #3
+const Mark = {
+    firstName: 'Mark',
+    weight: 78,
+    height: 1.69,
+    calcBMI: function () {
+        this.bmi = this.weight / (this.height ** 2)
+        return this.bmi
+    }
+}
+
+const Jake = {
+    firstName: 'Jake',
+    weight: 92,
+    height: 1.95,
+    calcBMI: function () {
+        this.bmi = this.weight / (this.height ** 2)
+        return this.bmi
+    }
+}
+
+
+const jake_bmi = Jake.calcBMI()
+const mark_bmi = Mark.calcBMI()
+if (jake_bmi > mark_bmi) {
+    console.log(`${Jake.firstName}'s BMI (${Jake.bmi}) is higher than ${Mark.firstName}'s BMI of ${Mark.bmi}`)
+} else {
+    console.log(`${Mark.firstName}'s BMI (${Mark.bmi}) is higher than ${Jake.firstName}'s BMI of ${Jake.bmi}`)
+}
+
+*/
+
+// For loops 
+
+
+const users = ['Baker', 'Camila', 'Bella', 'Luna', 'Dog', 'Cat']
+const randomInfo = [1, true, ['One', 'Two', 'Three'], 'Baker']
+for (let i = 0; i < users.length; i++) {
+    console.log(users[i])
+}
+
+
+const randomInfoDataTypes = []
+for (let i = 0; i < randomInfo.length; ++i) {
+    randomInfoDataTypes[i] = typeof randomInfo[i];
+}
+
+console.log(randomInfoDataTypes)
+
+
+/// continue and break with loops
+
+/// count from 1 to 10 but skip even numbers
+for (let i = 1; i <= 10; ++i) {
+    if (i % 2 == 0) {
+        continue
+    } else {
+        console.log(i)
+    }
+}
+// for loop break example
+const grades = [99, 85, 73, 50, 100]
+for (let i = 0; i < grades.length; ++i) {
+    if (grades[i] < 60) {
+        console.log("Oh no! someone failed the class..stopping all processes.")
+        console.log(`The failing grades was a ${grades[i]}`)
+        break
+    } else {
+        console.log(grades[i])
+    }
+}
+
+/// Rocket blastoff
+const countDown = [1, 2, 3, 4, 5]
+
+for (let i = countDown.length - 1; i >= 0; --i) {
+    console.log(countDown[i])
+}
+
+// while loop
+
+// let limit = 10
+
+// while (limit >= 5) {
+//     console.log(limit);
+//     if (limit === 5) {
+//         console.log('Loop is about to stop')
+//     }
+//     limit--
+// }
