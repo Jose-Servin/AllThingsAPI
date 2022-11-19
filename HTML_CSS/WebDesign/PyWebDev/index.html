@@ -20,20 +20,32 @@
 
 <body>
     <div class="main-container">
-        <div class="grid-2-cols">
+        <div class="grid-2-cols nav-grid">
             <p id="navbar-logo-text">PyWebDev.org</p>
             <nav>
-                <ul class="nav-bar-elms">
-                    <li>Community</li>
-                    <li>Docs</li>
-                    <li>Frontend</li>
-                    <li>Backend</li>
-                    <li>About</li>
-
+                <ul class="parent-navbar">
+                    <li> <a href="#" class="top-nav-elements"> Community</a></li>
+                    <li> <a href="#" class="top-nav-elements"> Docs</a></li>
+                    <li>
+                        <a href="#" class="top-nav-elements"> Frontend</a>
+                        <!-- <ul class="navbar-dropdown">
+                                <li><a href="#">HTML</a></li>
+                                <li><a href="#">CSS</a></li>
+                                <li><a href="#">JavaScript</a></li>
+                            </ul> -->
+                    </li>
+                    <li>
+                        <a href="#" class="top-nav-elements"> Backend</a>
+                        <!-- <ul class="navbar-dropdown">
+                                <li><a href="#">Python</a></li>
+                                <li><a href="#">PHP</a></li>
+                                <li><a href="#">Java</a></li>
+                            </ul> -->
+                    </li>
+                    <li> <a href="#" class="top-nav-elements"> About</a></li>
                 </ul>
             </nav>
         </div>
-
         <header class="grid-2-cols">
             <div class="header-box">
                 <h1 class="header-title">Welcome Python WebDevs</h1>
@@ -103,15 +115,15 @@
                         <h3 class="framework-title">Django</h3>
                         <ul class="framework-details">
                             <li>
-                                <i class="small-li-icon ph-circle"></i>
+                                <i class="small-li-icon ph-circle-fill"></i>
                                 <span>Great for fully-fledged web apps.</span>
                             </li>
                             <li>
-                                <i class="small-li-icon ph-circle"></i>
+                                <i class="small-li-icon ph-circle-fill"></i>
                                 <span>Strong Database Integration.</span>
                             </li>
                             <li>
-                                <i class="small-li-icon ph-circle"></i>
+                                <i class="small-li-icon ph-circle-fill"></i>
                                 <span>Model-Template-View Architecture</span>
                             </li>
                         </ul>
@@ -125,15 +137,15 @@
                         <h3 class="framework-title">Flask</h3>
                         <ul class="framework-details">
                             <li>
-                                <i class="small-li-icon ph-circle"></i>
+                                <i class="small-li-icon ph-circle-fill"></i>
                                 <span>Simple and manageable solutions.</span>
                             </li>
                             <li>
-                                <i class="small-li-icon ph-circle"></i>
+                                <i class="small-li-icon ph-circle-fill"></i>
                                 <span>Great for lean functionality.</span>
                             </li>
                             <li>
-                                <i class="small-li-icon ph-circle"></i>
+                                <i class="small-li-icon ph-circle-fill"></i>
                                 <span>Prototype Building solution.</span>
                             </li>
                         </ul>
@@ -147,15 +159,15 @@
                         <h3 class="framework-title">Falcon</h3>
                         <ul class="framework-details">
                             <li>
-                                <i class="small-li-icon ph-circle"></i>
+                                <i class="small-li-icon ph-circle-fill"></i>
                                 <span>Minimalist ASGI/WSGI framework.</span>
                             </li>
                             <li>
-                                <i class="small-li-icon ph-circle"></i>
+                                <i class="small-li-icon ph-circle-fill"></i>
                                 <span>REST architectural style.</span>
                             </li>
                             <li>
-                                <i class="small-li-icon ph-circle"></i>
+                                <i class="small-li-icon ph-circle-fill"></i>
                                 <span>Lean solution.</span>
                             </li>
                         </ul>
