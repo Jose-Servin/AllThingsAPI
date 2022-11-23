@@ -37,11 +37,21 @@ body {
     color: #32363a;
 }
 
-.main-container {
+.content-container {
     max-width: 120rem;
     margin: 0 auto;
+    margin-bottom: 9.6rem;
+
     /* background-color: rgb(197, 199, 200); */
+}
+
+.header-section {
     margin-top: 3.2rem;
+    background-color: red;
+}
+
+.why-section {
+    background-color: rgb(95, 95, 226);
 }
 
 #navbar-logo-text {
@@ -65,10 +75,6 @@ a {
     text-decoration: none;
 }
 
-header,
-section {
-    margin-bottom: 9.6rem;
-}
 
 nav {
     padding: 1rem;
@@ -223,6 +229,11 @@ img {
 }
 
 .testimonial-section {
+    background-color: lightgreen;
+}
+
+
+.testimonial-content {
     background-color: #eceef5;
     color: black;
     padding: 2.4rem;
@@ -287,12 +298,19 @@ blockquote {
     font-style: italic;
 }
 
+.framework-section {
+    background-color: lightpink;
+}
+
 .framework-box {
     display: flex;
+    background-color: white;
     flex-direction: column;
     gap: 1.6rem;
     padding: 3.2rem 2.4rem;
-    box-shadow: 0 2rem 3rem 0 rgba(0, 0, 0, 0.07);
+    /* box-shadow: 0 2rem 3rem 0 rgba(0, 0, 0, 0.07); */
+    box-shadow: 0 2rem 3rem 0 rgba(0, 0, 0, 0.838);
+
 }
 
 
