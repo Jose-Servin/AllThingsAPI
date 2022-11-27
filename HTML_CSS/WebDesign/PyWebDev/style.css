@@ -40,18 +40,30 @@ body {
 .content-container {
     max-width: 120rem;
     margin: 0 auto;
-    margin-bottom: 9.6rem;
-
     /* background-color: rgb(197, 199, 200); */
 }
 
 .header-section {
     margin-top: 3.2rem;
-    background-color: red;
+    padding-bottom: 9.6rem;
 }
 
 .why-section {
-    background-color: rgb(95, 95, 226);
+    background-color: #1d3f5b;
+    padding-bottom: 9.6rem;
+    position: relative;
+    color: #eceef5;
+}
+
+.why-section-angle {
+    background-color: #1d3f5b;
+    height: 245px;
+    width: 110vw;
+    position: absolute;
+    top: 0;
+    left: -8vw;
+    transform: rotate(-4.5deg) translateY(-38%);
+    z-index: -1;
 }
 
 #navbar-logo-text {
@@ -158,6 +170,7 @@ h3 {
 .header-images {
     /* background-color: orange; */
     position: relative;
+    z-index: 1;
 }
 
 img {
@@ -230,6 +243,8 @@ img {
 
 .testimonial-section {
     background-color: lightgreen;
+    padding: 9.6rem 0;
+
 }
 
 
@@ -300,6 +315,8 @@ blockquote {
 
 .framework-section {
     background-color: lightpink;
+    padding: 9.6rem 0;
+
 }
 
 .framework-box {
