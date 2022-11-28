@@ -33,7 +33,7 @@ body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
     letter-spacing: 1px;
-    background-color: #fff;
+    background-color: #f6f7fa;
     color: #32363a;
 }
 
@@ -242,7 +242,7 @@ img {
 }
 
 .testimonial-section {
-    background-color: lightgreen;
+    background-color: #f6f7fa;
     padding: 9.6rem 0;
 
 }
@@ -250,6 +250,7 @@ img {
 
 .testimonial-content {
     background-color: #eceef5;
+    box-shadow: 0 2rem 3rem 0 rgba(0, 0, 0, 0.09);
     color: black;
     padding: 2.4rem;
     border-radius: 0.8rem;
@@ -314,19 +315,34 @@ blockquote {
 }
 
 .framework-section {
-    background-color: lightpink;
+    background-color: #1d3f5b;
+    color: #eceef5;
     padding: 9.6rem 0;
-
+    position: relative;
 }
+
+/* .framework-section-angle {
+    background-color: #f6f7fa;
+    height: 245px;
+    width: 110vw;
+    position: absolute;
+    top: 0;
+    left: -8vw;
+    transform: rotate(4.5deg) translateY(-38%);
+    z-index: 0;
+} */
+
 
 .framework-box {
     display: flex;
     background-color: white;
+    color: #32363a;
     flex-direction: column;
     gap: 1.6rem;
     padding: 3.2rem 2.4rem;
-    /* box-shadow: 0 2rem 3rem 0 rgba(0, 0, 0, 0.07); */
-    box-shadow: 0 2rem 3rem 0 rgba(0, 0, 0, 0.838);
+    box-shadow: 0 2rem 3rem 0 rgba(0, 0, 0, 0.07);
+    border-radius: 1.5rem;
+    /* box-shadow: 0 2rem 3rem 0 rgba(0, 0, 0, 0.838); */
 
 }
 
@@ -358,9 +374,12 @@ span {
     margin-bottom: 1.6rem;
 }
 
-.courses-flex-box {
+.community-section {
+    height: 35rem;
+}
+
+.community-flex-box {
     display: flex;
-    flex-direction: column;
     gap: 5rem;
 
 }
