@@ -43,8 +43,9 @@ body {
     /* background-color: rgb(197, 199, 200); */
 }
 
+
 .header-section {
-    margin-top: 3.2rem;
+    margin-top: 2em;
     padding-bottom: 9.6rem;
 }
 
@@ -100,18 +101,38 @@ nav {
     list-style-type: none;
 }
 
-.top-nav-elements:link,
-.top-nav-elements:visited {
+.parent-nav-elements:link,
+.parent-nav-elements:visited {
     color: black;
     display: inline-block;
     font-size: 1.6rem;
     font-weight: 600;
-
-
+    /* background-color: red; */
+    padding: 0.3rem 1rem;
+    border-radius: 0.8rem;
+    margin-right: 3.5rem;
+    /* background-color: #f1c936; */
 }
 
-.top-nav-elements:hover,
-.top-nav-elements:visited {}
+
+.parent-nav-elements:hover,
+.parent-nav-elements:active {
+    background-color: #f1c936;
+}
+
+
+.projects-dropdown {
+    display: none;
+}
+
+/* .parent-nav-elements:hover+.projects-dropdown {
+    display: inline-block;
+}
+
+.navbar-dropdown-element {
+    padding: 0.3rem 1rem;
+} */
+
 
 
 .grid-3-cols {
