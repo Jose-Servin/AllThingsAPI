@@ -78,10 +78,6 @@ ul {
     list-style: none;
 }
 
-/* .navbar-dropdown-element:hover {
-    cursor: pointer;
-} */
-
 
 a {
     /* display: inline-block; */
@@ -89,55 +85,22 @@ a {
 }
 
 
-nav {
-    padding: 1rem;
-}
-
-
-.parent-navbar {
+.nav-div ul {
     display: flex;
     justify-content: space-between;
-    font-weight: 500;
-    list-style-type: none;
-}
-
-.nav-elements:link,
-.nav-elements:visited {
-    color: black;
-    display: inline-block;
     font-size: 1.6rem;
     font-weight: 600;
-    /* background-color: red; */
-    padding: 0.3rem 1rem;
+
+}
+
+.nav-div ul li {
+    padding: 1rem 1rem;
     border-radius: 0.8rem;
-    margin-right: 3.5rem;
-    /* background-color: #f1c936; */
 }
 
 
-.hover-underline-animation {
-    display: inline-block;
-    position: relative;
-    color: #f1c936;
-}
-
-.hover-underline-animation::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 3px;
-    bottom: 0;
-    left: 0;
-    background-color: #f1c936;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-    /* box-shadow: 0 5px 10px #f1c936; */
-}
-
-.hover-underline-animation:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+.nav-div ul li a {
+    color: #32363a;
 }
 
 
@@ -145,17 +108,22 @@ nav {
     display: none;
 }
 
-
-nav ul li:hover .submenu-projects {
+.nav-div ul li:hover .submenu-projects {
     display: block;
     position: absolute;
+    margin-left: -1.5rem;
     z-index: 2;
     background-color: #f6f7fa;
     border-radius: 0.8rem;
-    margin-top: 1rem;
-    font-size: 1rem;
 }
 
+
+.nav-div ul li:hover .submenu-projects ul {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin: 1rem;
+}
 
 .grid-3-cols {
     display: grid;
@@ -174,6 +142,8 @@ nav ul li:hover .submenu-projects {
 .nav-grid {
     align-items: center;
     margin-bottom: 4.8rem;
+    grid-template-columns: 1fr 2fr;
+
 
 }
 
