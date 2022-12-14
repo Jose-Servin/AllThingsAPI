@@ -14,139 +14,37 @@ TEXT COLOR: #343a40
 
 */
 
-/* ******************************************* */
-/* GLOBAL RESETS */
-/* ******************************************* */
+/* Global Reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
-/* ******************************************* */
-/* BUTTONS */
-/* ******************************************* */
+/* Page Layouts */
 
-.button {
-    border-radius: 0.8rem;
-    align-self: flex-start;
+.grid-3-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 4.8rem;
+
 }
-
-.button:link,
-.button:visited {
-    background-color: #ffd43b;
-    color: black;
-    text-decoration: none;
-    padding: 0.8rem 1.6rem;
-    display: inline-block;
-    font-size: 1.7rem;
-    font-weight: 600;
-    transition: background-color 0.3sec;
-}
-
-.button:hover,
-.button:active {
-    background-color: #b39429;
-}
-
-.button-small:link,
-.button-small:visited {
-    text-align: center;
-    padding: 0.4rem 0.8rem;
-}
-
-.button-small:hover,
-.button-small:active {
-    text-align: center;
-    padding: 0.4rem 0.8rem;
-}
-
-/* ******************************************* */
-/* HEADER SECTION */
-/* ******************************************* */
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    background-color: #162a39;
-    color: whitesmoke;
-    align-items: center;
-    gap: 4.8rem;
-    /* FOR STICKY HEADER */
-    height: 9.6rem;
-    padding: 0 4.8rem;
+    padding: 2rem 20rem;
+    grid-template-columns: 1fr 2fr;
+
 }
 
-
-#navbar-logo-text {
-    font-family: 'Permanent Marker', 'Inter', sans-serif;
-    font-size: 3rem;
-    /* color: #306998; */
-}
-
-.nav-div ul {
-    display: flex;
-    align-items: center;
-    font-size: 1.6rem;
-    font-weight: 600;
-    gap: 9.8rem
-}
-
-
-.nav-div ul li a {
-    color: whitesmoke;
-    display: inline-block;
-}
-
-.nav-icon {
-    font-size: 2rem;
-}
-
-/* ******************************************* */
-/* HERO SECTION */
-/* ******************************************* */
-
-.section-hero {
-    background-color: #162a39;
-    color: whitesmoke;
-    padding: 3.2rem 0 9.6rem 0;
-}
-
-.hero {
+.hero-section {
     display: grid;
     grid-template-columns: 1.5fr 1.5fr;
-    max-width: 160rem;
-    /* here we center our hero content */
+    max-width: 130rem;
+    background-color: red;
     margin: 0 auto;
-    align-items: center;
-    gap: 4.8rem;
-    /* ADDED TO THE CONTENT SO PADDING EXISTS IN SMALLER VIEW PORTS */
-    padding: 0 3.2rem;
 }
-
-.hero-title {
-    font-size: 5.2rem;
-    letter-spacing: 3px;
-    margin-bottom: 1.6rem;
-    white-space: nowrap;
-}
-
-.hero-text {
-    margin-bottom: 4.8rem;
-    line-height: 1.7;
-    font-size: 1.8rem;
-}
-
-
-.hero-images img {
-    width: 100%;
-    height: auto;
-    border-radius: 0.8rem;
-    object-fit: contain;
-}
-
-
-
 
 .why-section {
     /* background-color: #1d3f5b; */
@@ -164,7 +62,43 @@ TEXT COLOR: #343a40
 
 /* General button styles: both normal and small buttons */
 
+.button {
+    border-radius: 0.8rem;
+    align-self: flex-start;
+}
 
+.button:link,
+.button:visited {
+    background-color: #ffd43b;
+    color: black;
+    text-decoration: none;
+    padding: 0.8rem 1.6rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    font-weight: 600;
+    transition: background-color 0.25s;
+}
+
+.button:hover,
+.button:active {
+    background-color: #e6bf35;
+
+}
+
+
+.button-small:link,
+.button-small:visited {
+    text-align: center;
+    padding: 0.4rem 0.8rem;
+
+}
+
+.button-small:hover,
+.button-small:active {
+    text-align: center;
+    padding: 0.4rem 0.8rem;
+
+}
 
 
 /* Parent Components */
@@ -212,10 +146,24 @@ blockquote {
     font-size: 1.6rem;
 }
 
-
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.8rem;
+    object-fit: contain;
+}
 
 /* single image styles */
+.light-theme-python {
+    background-color: darkgreen;
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    position: absolute;
+    top: 38%;
+    left: 20%;
 
+}
 
 .dark-theme-html {
     position: absolute;
@@ -230,24 +178,72 @@ blockquote {
 
 /* header section styles: includes nav and header */
 
+#navbar-logo-text {
+    font-family: 'Permanent Marker', 'Inter', sans-serif;
+    font-size: 2.4rem;
+    /* color: #306998; */
+}
+
+/* nav styles: includes sub-component nav bar styling */
+.nav-div ul {
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    gap: 9.8rem
+}
 
 
+.nav-div ul li a {
+    color: #32363a;
+    display: inline-block;
+}
+
+
+.submenu-projects {
+    display: none;
+}
+
+
+.nav-div ul li:hover .submenu-projects {
+    display: block;
+    position: absolute;
+    margin-left: -0.5rem;
+    z-index: 2;
+    background-color: #f6f7fa;
+    border-radius: 0.4rem;
+}
+
+
+.nav-div ul li:hover .submenu-projects ul {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.nav-div ul li:hover .submenu-projects ul li {
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.nav-icon {
+    font-size: 2rem;
+}
 
 
 /* hero space breakdown */
 
-
-/* Hero community section styles */
-.community {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-top: 1.6rem;
+.hero-images {
+    /* background-color: orange; */
+    position: relative;
+    z-index: 1;
+    width: 100%;
 }
 
+/* Hero community section styles */
 .community-members {
     display: flex;
-    align-items: center;
 }
 
 .community-members img {
@@ -257,7 +253,7 @@ blockquote {
     object-fit: cover;
     border-radius: 20rem;
     margin-left: -0.8rem;
-    margin-bottom: 2rem;
+    margin-bottom: 5px;
     border: 3px solid #f6f7fa;
 }
 
@@ -266,14 +262,13 @@ blockquote {
 }
 
 .community-text p {
+
     font-weight: bold;
-    display: inline-block;
 }
 
 
 .community-text p span {
-    color: #ffd84f;
-    margin: 0;
+    color: #f77f00;
 }
 
 /* why section styles */

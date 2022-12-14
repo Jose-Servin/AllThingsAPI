@@ -20,49 +20,58 @@
 
 <body>
 
-    <section class="header-section">
-        <section class="content-container">
-            <div class="grid-2-cols nav-grid">
-                <p id="navbar-logo-text">PyWebDev.org</p>
-                <nav>
-                    <div class="nav-div">
+    <header class="header">
+        <p id="navbar-logo-text">PyWebDev.org</p>
+        <nav class="nav-div">
+            <ul>
+                <li> <a href=""> <i class="nav-icon ph-brackets-curly-light"></i> Frontend</a></li>
+                <li> <a href=""> <i class="nav-icon ph-code-light"></i> Backend</a></li>
+                <li> <a href=""> <i class="nav-icon ph-file-code-light"></i> Docs</a></li>
+                <li> <a href=""> <i class="nav-icon ph-codepen-logo-light"></i> Projects</a></li>
+                <li> <a href=""> <i class="nav-icon ph-users-three-light"></i> Community</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- <header class="grid-3-columns header">
+        <p id="navbar-logo-text">PyWebDev.org</p>
+        <nav class="nav-div">
+            <ul>
+                <li> <a href=""> <i class="nav-icon ph-brackets-curly-light"></i> Frontend</a></li>
+                <li> <a href=""> <i class="nav-icon ph-code-light"></i> Backend</a></li>
+                <li> <a href=""> <i class="nav-icon ph-file-code-light"></i> Docs</a></li>
+                <li> <a href=""> <i class="nav-icon ph-codepen-logo-light"></i> Projects</a>
+                    <div class="submenu-projects">
                         <ul>
-                            <li> <a href=""> <i class="nav-icon ph-brackets-curly-light"></i> Frontend</a></li>
-                            <li> <a href=""> <i class="nav-icon ph-code-light"></i> Backend</a></li>
-                            <li> <a href=""> <i class="nav-icon ph-file-code-light"></i> Docs</a></li>
-                            <li> <a href=""> <i class="nav-icon ph-codepen-logo-light"></i> Projects</a>
-                                <div class="submenu-projects">
-                                    <ul>
-                                        <li>
-                                            <a href="Guess-My-Number/index.html" target="_blank">
-                                                Guess my Number Game
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="nav-elements">
-                                                Calculator App
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                Weather GUI
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
+                            <li>
+                                <a href="Guess-My-Number/index.html" target="_blank">
+                                    Guess my Number Game
+                                </a>
                             </li>
-                            <li> <a href=""> <i class="nav-icon ph-users-three-light"></i> Community</a></li>
+                            <li>
+                                <a href="#" class="nav-elements">
+                                    Calculator App
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Weather GUI
+                                </a>
+                            </li>
                         </ul>
-
                     </div>
-
-                </nav>
-            </div>
-            <header class="grid-2-cols header-grid">
-                <div class="header-box">
-                    <h1 class="header-title">Welcome Python WebDevs</h1>
-                    <p class="header-text">Join our growing community and meet other Python Web Developers! Whether
-                        you're searching for Docs, want to stay up to date on interesting topics like Bootstrap, Flask
+                </li>
+                <li> <a href=""> <i class="nav-icon ph-users-three-light"></i> Community</a></li>
+            </ul>
+        </nav>
+    </header> -->
+    <main>
+        <section class="section-hero">
+            <div class="hero">
+                <div class="hero-text-box">
+                    <h1 class="hero-title">Welcome Python WebDevs</h1>
+                    <p class="hero-text">Join our growing community and meet other Python Web Developers! Whether
+                        you're searching for Docs, want to stay up to date on interesting topics like Bootstrap,
+                        Flask
                         and Frontend trends or simply want to collaborate with others - join now!
                     </p>
                     <a role="button" class="button button-big" href="#">Join our Community</a>
@@ -82,171 +91,18 @@
 
                     </div>
                 </div>
-                <div class="header-images">
+                <div class="hero-images">
                     <img src="../images/dark-code.png" alt="dark-theme-code" class="dark-theme-python">
-                    <img src="../images/light-code.png" alt="light-theme-code" class="light-theme-python">
-                    <img src="../images/html-code.png" alt="screenshot of html-code on screen" class="dark-theme-html">
-                </div>
-            </header>
-        </section>
-    </section>
-
-    <section class="why-section">
-        <div class="why-section-angle"></div>
-        <section class="content-container">
-            <h2>Why Python?</h2>
-            <div class="grid-3-cols">
-                <div>
-                    <i class="ph ph-book-open"></i>
-                    <h3>Rich Standard Library</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem voluptates, accusamus
-                        dignissimos molestiae, quidem doloremque tenetur nec</p>
-                </div>
-                <div>
-                    <i class="ph ph-code"></i>
-                    <h3>Easy and Readable</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem voluptates, accusamus
-                        dignissimos molestiae, quidem doloremque tenetur nec</p>
-                </div>
-                <div>
-                    <i class="ph ph-stack-simple"></i>
-                    <h3>OOP</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem voluptates, accusamus
-                        dignissimos molestiae, quidem doloremque tenetur nec</p>
+                    <!-- <img src="../images/light-code.png" alt="light-theme-code" id="light-theme-python"> -->
+                    <!-- <img src="../images/html-code.png" alt="screenshot of html-code on screen" class="dark-theme-html"> -->
                 </div>
             </div>
         </section>
-    </section>
-
-    <section class="testimonial-section">
-        <section class="content-container testimonial-content">
-            <!-- <img src="../images/python-logo.png" alt="" id="small-python"> -->
-            <div class="grid-3-cols">
-                <img src="../images/flask-code.png" alt="python code on screen" id="python-code">
-                <div class="testimonial-flex-box">
-                    <h2 class="testimonial-title">
-                        <span id="simple">Simple. </span>
-                        <span id="elegant">Elegant. </span>
-                        <span id="popular">Popular.</span>
-                    </h2>
-                    <blockquote>
-                        Python is incredibly easy to read, so developers typically have no
-                        problems understanding code written by their fellow programmers.
-                        This makes the communication
-                        between developers working on the same project much more efficient.
-                    </blockquote>
-                    <p class="testimonial-author"> - Jose Servin (PyWebDev Community Member)</p>
-                </div>
-            </div>
-        </section>
-    </section>
-
-    <section class="framework-section">
-        <div class="framework-section-angle"></div>
-        <section class="content-container">
-            <h2>Python Web Frameworks</h2>
-            <div class="grid-3-cols">
-                <figure>
-                    <div class="framework-box">
-                        <img src="../images/Django.svg" alt="Django logo" class="framework-image">
-                        <h3 class="framework-title">Django</h3>
-                        <ul class="framework-details">
-                            <li>
-                                <i class="small-li-icon ph-circle-fill"></i>
-                                <span>Great for fully-fledged web apps.</span>
-                            </li>
-                            <li>
-                                <i class="small-li-icon ph-circle-fill"></i>
-                                <span>Strong Database Integration.</span>
-                            </li>
-                            <li>
-                                <i class="small-li-icon ph-circle-fill"></i>
-                                <span>Model-Template-View Architecture</span>
-                            </li>
-                        </ul>
-                        <a role="button" class="button button-small" href="#">Learn More</a>
-                    </div>
-
-                </figure>
-                <figure>
-                    <div class="framework-box">
-                        <img src="../images/flask-logo.svg" alt="Flask logo" class="framework-image">
-                        <h3 class="framework-title">Flask</h3>
-                        <ul class="framework-details">
-                            <li>
-                                <i class="small-li-icon ph-circle-fill"></i>
-                                <span>Simple and manageable solutions.</span>
-                            </li>
-                            <li>
-                                <i class="small-li-icon ph-circle-fill"></i>
-                                <span>Great for lean functionality.</span>
-                            </li>
-                            <li>
-                                <i class="small-li-icon ph-circle-fill"></i>
-                                <span>Prototype Building solution.</span>
-                            </li>
-                        </ul>
-                        <a role="button" class="button button-small" href="#">Learn More</a>
-                    </div>
-
-                </figure>
-                <figure>
-                    <div class="framework-box">
-                        <img src="../images/falcon-logo.svg" alt="Flacon logo" class="framework-image">
-                        <h3 class="framework-title">Falcon</h3>
-                        <ul class="framework-details">
-                            <li>
-                                <i class="small-li-icon ph-circle-fill"></i>
-                                <span>Minimalist ASGI/WSGI framework.</span>
-                            </li>
-                            <li>
-                                <i class="small-li-icon ph-circle-fill"></i>
-                                <span>REST architectural style.</span>
-                            </li>
-                            <li>
-                                <i class="small-li-icon ph-circle-fill"></i>
-                                <span>Lean solution.</span>
-                            </li>
-                        </ul>
-                        <a role="button" class="button button-small" href="#">Learn More</a>
-                    </div>
-                </figure>
-            </div>
-        </section>
-    </section>
 
 
-    <section class="community-section">
-        <div class="content-container">
-            <h2>Join our Growing Community</h2>
-            <div class="community-grid">
-                <!-- <a class="community-element" href="#">HTML</a> -->
-                <img src="../images/html.png" alt="" class="community-element" id="html">
-                <a class="community-element" href="#"> Collaborate</Collaborate></a>
-                <a class="community-element" href="#">JavaScript</a>
-                <a class="community-element" href="#">Mentor</a>
-                <a class="community-element" href="#">Python</a>
-                <a class="community-element" href="#">Contribute</a>
-                <a class="community-element" href="#">CSS</a>
-                <a class="community-element" href="#">Learn</a>
-                <a class="community-element" href="#">Docker</a>
-            </div>
-        </div>
-        </div>
-    </section>
+    </main>
 
-    <!-- <footer class="grid-6-cols">
-        <div class="footer-div"></div>
-        <div class="footer-div"></div>
-        <div class="footer-div"></div>
-        <div class="footer-div"></div>
-        <div class="footer-div"></div>
-        <p>
-            Copyright © 2027 by Jose Servin. Part of "Build Responsive Real-World Websites with HTML and CSS" online
-            course. Use for learning purposes only.
-        </p>
-    </footer> -->
-    <script src="script.js"></script>
+
 </body>
 
 </html>
