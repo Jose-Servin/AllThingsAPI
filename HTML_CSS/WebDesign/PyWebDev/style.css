@@ -28,7 +28,7 @@ TEXT COLOR: #343a40
 /* ******************************************* */
 
 .button {
-    border-radius: 0.8rem;
+    border-radius: 8px;
     align-self: flex-start;
 }
 
@@ -77,29 +77,42 @@ TEXT COLOR: #343a40
     padding: 0 4.8rem;
 }
 
+/* ******************************************* */
+/* NAVIGATION AND NAV SECTION */
+/* ******************************************* */
 
 #navbar-logo-text {
     font-family: 'Permanent Marker', 'Inter', sans-serif;
-    font-size: 3rem;
+    font-size: 2.4rem;
     /* color: #306998; */
 }
+
 
 .nav-div ul {
     display: flex;
     align-items: center;
-    font-size: 1.6rem;
-    font-weight: 600;
     gap: 9.8rem
 }
 
 
-.nav-div ul li a {
+.main-nav-links:link,
+.main-nav-links:visited {
     color: whitesmoke;
     display: inline-block;
+    font-size: 1.8rem;
+    font-weight: 600;
+    transition: all 0.3s;
+    border-bottom: 3px solid transparent;
+}
+
+.main-nav-links:hover,
+.main-nav-links:active {
+    color: #ffd43b;
+    border-bottom: 3px solid #ffd43b;
 }
 
 .nav-icon {
-    font-size: 2rem;
+    font-size: 2.4rem;
 }
 
 /* ******************************************* */
@@ -115,7 +128,7 @@ TEXT COLOR: #343a40
 .hero {
     display: grid;
     grid-template-columns: 1.5fr 1.5fr;
-    max-width: 160rem;
+    max-width: 140rem;
     /* here we center our hero content */
     margin: 0 auto;
     align-items: center;
@@ -268,6 +281,7 @@ blockquote {
 .community-text p {
     font-weight: bold;
     display: inline-block;
+    font-size: 1.8rem;
 }
 
 
@@ -305,12 +319,12 @@ blockquote {
     box-shadow: 0 2rem 3rem 0 rgba(0, 0, 0, 0.09);
     color: black;
     padding: 2.4rem;
-    border-radius: 0.8rem;
+    border-radius: 8px;
 
 }
 
 #python-code {
-    border-radius: 0.8rem;
+    border-radius: 8px;
 }
 
 .testimonial-flex-box {
@@ -377,7 +391,7 @@ blockquote {
     gap: 1.6rem;
     padding: 3.2rem 2.4rem;
     box-shadow: 0 2rem 3rem 0 rgba(0, 0, 0, 0.07);
-    border-radius: 1.5rem;
+    border-radius: 15px;
     /* box-shadow: 0 2rem 3rem 0 rgba(0, 0, 0, 0.838); */
 }
 
