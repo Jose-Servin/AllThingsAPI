@@ -24,6 +24,30 @@ TEXT COLOR: #343a40
 }
 
 /* ******************************************* */
+/* Re-usable page layouts */
+/* ******************************************* */
+/* USED TO CENTER CONTENT IN RELATION TO VIEWPORT */
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    /* ADDED TO THE CONTENT SO PADDING EXISTS IN SMALLER VIEW PORTS */
+    padding: 0 3.2rem;
+}
+
+.grid {
+    display: grid;
+    gap: 9.6rem;
+}
+
+.grid--2-columns {
+    grid-template-columns: repeat(2, 1fr)
+}
+
+.grid--3-columns {
+    grid-template-columns: repeat(3, 1fr)
+}
+
+/* ******************************************* */
 /* BUTTONS */
 /* ******************************************* */
 
@@ -91,7 +115,7 @@ TEXT COLOR: #343a40
 .nav-div ul {
     display: flex;
     align-items: center;
-    gap: 9.8rem
+    gap: 9.6rem
 }
 
 
@@ -128,7 +152,7 @@ TEXT COLOR: #343a40
 .hero {
     display: grid;
     grid-template-columns: 1.5fr 1.5fr;
-    max-width: 140rem;
+    max-width: 120rem;
     /* here we center our hero content */
     margin: 0 auto;
     align-items: center;
@@ -155,8 +179,18 @@ TEXT COLOR: #343a40
     width: 100%;
     height: auto;
     border-radius: 0.8rem;
-    object-fit: contain;
+    /* object-fit: contain; */
 }
+
+/* ******************************************* */
+/* SECTION-WHY-JOIN */
+/* ******************************************* */
+.section-why-join {
+    padding: 9.6rem 0;
+    background-color: #646464;
+}
+
+
 
 
 
