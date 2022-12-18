@@ -36,7 +36,8 @@ TEXT COLOR: #343a40
 
 .grid {
   display: grid;
-  gap: 9.6rem;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
 }
 
 .grid--2-columns {
@@ -45,6 +46,10 @@ TEXT COLOR: #343a40
 
 .grid--3-columns {
   grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--center-v {
+  align-items: center;
 }
 
 .section-heading span {
@@ -106,7 +111,7 @@ TEXT COLOR: #343a40
   display: flex;
   justify-content: space-between;
   background-color: #f7f9fc;
-  color: black;
+  color: #222;
   align-items: center;
   gap: 4.8rem;
   /* FOR STICKY HEADER */
@@ -156,7 +161,7 @@ TEXT COLOR: #343a40
 
 .section-hero {
   background-color: #f7f9fc;
-  color: black;
+  color: #222;
   padding: 3.2rem 0 9.6rem 0;
 }
 
@@ -238,33 +243,46 @@ TEXT COLOR: #343a40
 .section-why-join {
   padding: 9.6rem 0;
   background-color: #f7f9fc;
+  position: relative;
+  /* background-image: url(../images/edges-design.png); */
+  /* background-size: cover; */
 }
 
 .section-heading {
-  color: black;
+  color: #222;
 }
 
 .why-join-text-box {
   /* height: 15rem; */
-  color: whitesmoke;
-  color: black;
+  color: #222;
+}
+
+.step-number {
+  font-size: 6.2rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.step-heading {
+  font-size: 3rem;
+  margin-bottom: 3.2rem;
+}
+
+.step-description {
+  font-size: 1.8rem;
+}
+
+.why-join-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .why-join-image img {
   /* height: 15rem; */
-  width: 60%;
+  width: 55%;
   box-shadow: 0 2rem 3rem 0 rgba(0, 0, 0, 0.09);
   border-radius: 8px;
-}
-
-.sign-up-form {
-  background-color: #f0f3f0;
-  margin: auto;
-  padding: 1.6rem 3.2rem;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
 }
 
 /* ******************************************* */
@@ -306,17 +324,6 @@ ul {
 a {
   /* display: inline-block; */
   text-decoration: none;
-}
-
-h3 {
-  font-size: 2rem;
-  margin-top: 1.2rem;
-  margin-bottom: 0.4rem;
-}
-
-p,
-blockquote {
-  font-size: 1.6rem;
 }
 
 /* single image styles */
