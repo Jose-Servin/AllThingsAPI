@@ -47,6 +47,19 @@ TEXT COLOR: #343a40
   grid-template-columns: repeat(3, 1fr);
 }
 
+.section-heading span {
+  font-family: "Permanent Marker", "Inter", sans-serif;
+  font-size: 2.4rem;
+  color: #1971c2;
+  letter-spacing: 2px;
+}
+
+.section-heading h2 {
+  padding-bottom: 1.6rem;
+  font-size: 3.6rem;
+  margin-bottom: 9.6rem;
+}
+
 /* ******************************************* */
 /* BUTTONS */
 /* ******************************************* */
@@ -58,7 +71,7 @@ TEXT COLOR: #343a40
 
 .button:link,
 .button:visited {
-  background-color: #ffd43b;
+  background-color: #ffc053;
   color: black;
   text-decoration: none;
   padding: 0.8rem 1.6rem;
@@ -92,8 +105,8 @@ TEXT COLOR: #343a40
 .header {
   display: flex;
   justify-content: space-between;
-  background-color: #0e1f2e;
-  color: #e6e6e6;
+  background-color: #f7f9fc;
+  color: black;
   align-items: center;
   gap: 4.8rem;
   /* FOR STICKY HEADER */
@@ -119,9 +132,9 @@ TEXT COLOR: #343a40
 
 .main-nav-links:link,
 .main-nav-links:visited {
-  color: whitesmoke;
+  color: #0e1f2e;
   display: inline-block;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 600;
   transition: all 0.3s;
   border-bottom: 3px solid transparent;
@@ -129,7 +142,7 @@ TEXT COLOR: #343a40
 
 .main-nav-links:hover,
 .main-nav-links:active {
-  color: #ffd43b;
+  color: #0e1f2e;
   border-bottom: 3px solid #ffd43b;
 }
 
@@ -142,8 +155,8 @@ TEXT COLOR: #343a40
 /* ******************************************* */
 
 .section-hero {
-  background-color: #0e1f2e;
-  color: #e6e6e6;
+  background-color: #f7f9fc;
+  color: black;
   padding: 3.2rem 0 9.6rem 0;
 }
 
@@ -160,6 +173,7 @@ TEXT COLOR: #343a40
 }
 
 .hero-title {
+  font-family: "Permanent Marker", "Inter", sans-serif;
   font-size: 5.2rem;
   letter-spacing: 3px;
   margin-bottom: 1.6rem;
@@ -179,12 +193,51 @@ TEXT COLOR: #343a40
   /* object-fit: contain; */
 }
 
+/* Hero community section styles */
+.community {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 1.6rem;
+}
+
+.community-members {
+  display: flex;
+  align-items: center;
+}
+
+.community-members img {
+  height: 5rem;
+  width: 5rem;
+  margin-top: 2rem;
+  object-fit: cover;
+  border-radius: 20rem;
+  margin-left: -0.8rem;
+  margin-bottom: 2rem;
+  border: 3px solid #ffd43b;
+}
+
+.community-members img:first-child {
+  margin-left: 0rem;
+}
+
+.community-text p {
+  font-weight: bold;
+  display: inline-block;
+  font-size: 1.8rem;
+}
+
+.community-text p span {
+  color: #ffb940;
+  margin: 0;
+}
+
 /* ******************************************* */
 /* SECTION-WHY-JOIN */
 /* ******************************************* */
 .section-why-join {
   padding: 9.6rem 0;
-  background-color: #b1c2d6;
+  background-color: #f7f9fc;
 }
 
 .section-heading {
@@ -239,7 +292,7 @@ html {
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Oxygen", sans-serif;
   line-height: 1.6;
   letter-spacing: 1px;
   background-color: #f6f7fa;
@@ -253,16 +306,6 @@ ul {
 a {
   /* display: inline-block; */
   text-decoration: none;
-}
-
-h1 {
-  font-family: "Permanent Marker", "Inter", sans-serif;
-  font-size: 4.8rem;
-}
-
-h2 {
-  font-size: 3.2rem;
-  margin-bottom: 1.6rem;
 }
 
 h3 {
@@ -292,45 +335,6 @@ blockquote {
 /* header section styles: includes nav and header */
 
 /* hero space breakdown */
-
-/* Hero community section styles */
-.community {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-top: 1.6rem;
-}
-
-.community-members {
-  display: flex;
-  align-items: center;
-}
-
-.community-members img {
-  height: 5rem;
-  width: 5rem;
-  margin-top: 2rem;
-  object-fit: cover;
-  border-radius: 20rem;
-  margin-left: -0.8rem;
-  margin-bottom: 2rem;
-  border: 3px solid #f6f7fa;
-}
-
-.community-members img:first-child {
-  margin-left: 0rem;
-}
-
-.community-text p {
-  font-weight: bold;
-  display: inline-block;
-  font-size: 1.8rem;
-}
-
-.community-text p span {
-  color: #ffd84f;
-  margin: 0;
-}
 
 /* why section styles */
 
@@ -452,7 +456,6 @@ blockquote {
 
 span {
   display: inline-block;
-  margin-bottom: 1.6rem;
 }
 
 /* Community Section styles */
