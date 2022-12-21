@@ -23,6 +23,18 @@ TEXT COLOR: #343a40
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Oxygen", sans-serif;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  background-color: #f6f7fa;
+  color: #32363a;
+}
+
 /* ******************************************* */
 /* Re-usable page layouts */
 /* ******************************************* */
@@ -238,6 +250,34 @@ TEXT COLOR: #343a40
 }
 
 /* ******************************************* */
+/* SECTION-FEATURED-IN  */
+/* ******************************************* */
+
+.section-featured-in {
+  padding: 4.8rem 0 3.2rem 0;
+}
+
+.featured-in-heading {
+  text-transform: uppercase;
+  margin-bottom: 2.4rem;
+  text-align: center;
+  font-weight: 700;
+  color: #999;
+}
+
+.featured-in-logos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.featured-in-logos img {
+  height: 4.2rem;
+  border-radius: 8px;
+  filter: brightness(0);
+  opacity: 50%;
+}
+
+/* ******************************************* */
 /* SECTION-WHY-JOIN */
 /* ******************************************* */
 .section-why-join {
@@ -304,18 +344,6 @@ TEXT COLOR: #343a40
 /* General button styles: both normal and small buttons */
 
 /* Parent Components */
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-family: "Oxygen", sans-serif;
-  line-height: 1.6;
-  letter-spacing: 1px;
-  background-color: #f6f7fa;
-  color: #32363a;
-}
 
 ul {
   list-style: none;
