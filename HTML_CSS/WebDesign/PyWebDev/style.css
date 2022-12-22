@@ -325,6 +325,43 @@ body {
   border-radius: 8px;
 }
 
+#circle {
+  border-radius: 50%;
+  width: 350px;
+  height: 350px;
+  border: 3px solid #1970c278;
+  position: relative;
+}
+
+#circle span {
+  font-size: 1.8rem;
+  font-weight: 600;
+  backdrop-filter: blur(10px);
+  padding: 3px 6px;
+}
+
+#collaborate {
+  position: absolute;
+  top: -4%;
+  right: 35%;
+  backdrop-filter: blur(10px);
+}
+#contribute {
+  position: absolute;
+  top: 41%;
+  right: -13%;
+}
+#mentor {
+  position: absolute;
+  bottom: -4%;
+  right: 39%;
+}
+#learn {
+  position: absolute;
+  top: 41%;
+  left: -8%;
+}
+
 /* ******************************************* */
 /* OLD */
 /* ******************************************* */
