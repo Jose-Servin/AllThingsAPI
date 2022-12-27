@@ -147,6 +147,12 @@ body {
   gap: 9.6rem;
 }
 
+.nav-element {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .main-nav-links:link,
 .main-nav-links:visited {
   color: #0e1f2e;
@@ -362,6 +368,71 @@ body {
   left: -8%;
 }
 
+/* ******************************************* */
+/* SECTION-COURSES */
+/* ******************************************* */
+.section-courses {
+  padding: 9.6rem 0;
+}
+
+.course {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  /* Eliminates the need to add border radius to image element */
+  overflow: hidden;
+}
+
+.course-image {
+  background-color: #003049;
+  padding: 2.4rem 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.course-information {
+  padding: 1rem 2.4rem 2.4rem 2.4rem;
+}
+
+.course-image img {
+  width: 40%;
+}
+
+.course-title {
+  font-family: "Permanent Marker", "Inter", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  margin: 0.4rem 0;
+}
+
+.course-description {
+  font-size: 1.4rem;
+  margin: 0.8rem 0;
+}
+
+.course-attribute {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.course-icon {
+  font-size: 1.6rem;
+}
+
+.course-duration {
+  font-size: 1.4rem;
+  margin: 0.8rem 0;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.3rem 0.6rem;
+  margin: 0.4rem 0.3rem;
+  background-color: #ffcd75;
+  border-radius: 8px;
+}
 /* ******************************************* */
 /* OLD */
 /* ******************************************* */

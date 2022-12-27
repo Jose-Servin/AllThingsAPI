@@ -12,6 +12,18 @@
     />
     <script src="https://unpkg.com/phosphor-icons"></script>
     <link rel="stylesheet" href="style.css" />
+    <script type="module">
+      import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@9/dist/mermaid.esm.min.mjs";
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
     <title>PyWebDev</title>
   </head>
 
@@ -20,30 +32,25 @@
       <p id="navbar-logo-text">PyWebDev.org</p>
       <nav class="nav-div">
         <ul>
-          <li>
-            <a href="#" class="main-nav-links">
-              <i class="nav-icon ph-brackets-curly-light"></i> Frontend</a
-            >
+          <li class="nav-element">
+            <i class="nav-icon ph-brackets-curly-light"></i>
+            <a href="#" class="main-nav-links"> Frontend</a>
           </li>
-          <li>
-            <a href="#" class="main-nav-links">
-              <i class="nav-icon ph-code-light"></i> Backend</a
-            >
+          <li class="nav-element">
+            <i class="nav-icon ph-code-light"></i>
+            <a href="#" class="main-nav-links"> Backend</a>
           </li>
-          <li>
-            <a href="#" class="main-nav-links">
-              <i class="nav-icon ph-file-code-light"></i> Docs</a
-            >
+          <li class="nav-element">
+            <i class="nav-icon ph-file-code-light"></i>
+            <a href="#" class="main-nav-links"> Docs</a>
           </li>
-          <li>
-            <a href="#" class="main-nav-links">
-              <i class="nav-icon ph-codepen-logo-light"></i> Projects</a
-            >
+          <li class="nav-element">
+            <i class="nav-icon ph-codepen-logo-light"></i>
+            <a href="#" class="main-nav-links"> Projects</a>
           </li>
-          <li>
-            <a href="#" class="main-nav-links">
-              <i class="nav-icon ph-users-three-light"></i> Community</a
-            >
+          <li class="nav-element">
+            <i class="nav-icon ph-users-three-light"></i>
+            <a href="#" class="main-nav-links"> Community</a>
           </li>
         </ul>
       </nav>
@@ -185,13 +192,163 @@
       <section class="section-courses">
         <div class="section-heading container">
           <span>Courses</span>
-          <h2>Pick a course and get started right away!</h2>
+          <h2>Start learning today!</h2>
+        </div>
+        <div class="container grid grid--3-columns">
+          <div class="course">
+            <div class="course-image">
+              <img
+                src="../images/courses/python-logo.png"
+                alt="an image of the python logo"
+              />
+            </div>
+            <div class="course-information">
+              <span class="course-title">Introduction to Python</span>
+              <p class="course-description">
+                Learn the fundamentals of the Python programming language while
+                being introduces to core programming concept like data types,
+                conditionals, loops and functions.
+              </p>
+              <div class="course-attribute">
+                <ion-icon name="time-outline" class="course-icon"></ion-icon>
+                <span class="course-duration">4 hours </span>
+              </div>
+              <span class="tag">Beginner </span>
+              <span class="tag">Programming Principles</span>
+              <span class="tag">Python Programming</span>
+            </div>
+          </div>
+          <div class="course">
+            <div class="course-image">
+              <img
+                src="../images/courses/html-logo.png"
+                alt="an image of the html5 logo"
+              />
+            </div>
+            <div class="course-information">
+              <span class="course-title">Introduction to HTML5</span>
+              <p class="course-description">
+                Learn the fundamentals of the Python programming language while
+                being introduces to core programming concept like data types,
+                conditionals, loops and functions.
+              </p>
+              <div class="course-attribute">
+                <ion-icon name="time-outline" class="course-icon"></ion-icon>
+                <span class="course-duration">2 hours </span>
+              </div>
+              <span class="tag">Beginner </span>
+              <span class="tag">Web Development</span>
+              <span class="tag">Front-End</span>
+              <span class="tag">HTML5</span>
+            </div>
+          </div>
+          <div class="course">
+            <div class="course-image">
+              <img
+                src="../images/courses/css-logo.png"
+                alt="an image of the CSS logo"
+              />
+            </div>
+            <div class="course-information">
+              <span class="course-title">Responsive Web Design with CSS</span>
+              <p class="course-description">
+                Learn the fundamentals of the Python programming language while
+                being introduces to core programming concept like data types,
+                conditionals, loops and functions.
+              </p>
+              <div class="course-attribute">
+                <ion-icon name="time-outline" class="course-icon"></ion-icon>
+                <span class="course-duration">4 hours </span>
+              </div>
+              <span class="tag">Intermediate</span>
+              <span class="tag">Web Development</span>
+              <span class="tag">Front-End</span>
+              <span class="tag">CSS</span>
+              <span class="tag">Responsive Web Design</span>
+            </div>
+          </div>
+          <div class="course">
+            <div class="course-image">
+              <img
+                src="../images/courses/javascript-logo.png"
+                alt="an image of the JavaScript logo"
+              />
+            </div>
+            <div class="course-information">
+              <span class="course-title">JavaScript for Beginners</span>
+              <p class="course-description">
+                Learn the fundamentals of the Python programming language while
+                being introduces to core programming concept like data types,
+                conditionals, loops and functions.
+              </p>
+              <div class="course-attribute">
+                <ion-icon name="time-outline" class="course-icon"></ion-icon>
+                <span class="course-duration">5 hours </span>
+              </div>
+              <span class="tag">Beginner </span>
+              <span class="tag">Programming Principles</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Web Development</span>
+            </div>
+          </div>
+          <div class="course">
+            <div class="course-image">
+              <img
+                src="../images/courses/postres-sql-logo.png"
+                alt="an image of the PostgreSQL logo"
+              />
+            </div>
+            <div class="course-information">
+              <span class="course-title"
+                >Database Essentials with PostgreSQL</span
+              >
+              <p class="course-description">
+                Learn the fundamentals of the Python programming language while
+                being introduces to core programming concept like data types,
+                conditionals, loops and functions.
+              </p>
+              <div class="course-attribute">
+                <ion-icon name="time-outline" class="course-icon"></ion-icon>
+                <span class="course-duration">4 hours </span>
+              </div>
+              <span class="tag">Beginner </span>
+              <span class="tag">SQL</span>
+              <span class="tag">Database</span>
+              <span class="tag">NoSQL</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Intermediate</span>
+            </div>
+          </div>
+          <div class="course">
+            <div class="course-image">
+              <img
+                src="../images/courses/react-logo.png"
+                alt="an image of the React logo"
+              />
+            </div>
+            <div class="course-information">
+              <span class="course-title"
+                >Full-Stack Web Development with React</span
+              >
+              <p class="course-description">
+                Learn the fundamentals of the Python programming language while
+                being introduces to core programming concept like data types,
+                conditionals, loops and functions.
+              </p>
+              <div class="course-attribute">
+                <ion-icon name="time-outline" class="course-icon"></ion-icon>
+                <span class="course-duration">16 hours </span>
+              </div>
+              <span class="tag">Expert </span>
+              <span class="tag">Programming Principles</span>
+              <span class="tag">Web Development</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">React</span>
+              <span class="tag">Full-Stack</span>
+            </div>
+          </div>
         </div>
       </section>
     </main>
-    <script type="module">
-      import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@9/dist/mermaid.esm.min.mjs";
-      mermaid.initialize({ startOnLoad: true });
-    </script>
   </body>
 </html>
