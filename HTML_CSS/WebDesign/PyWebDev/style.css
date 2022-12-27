@@ -368,6 +368,36 @@ body {
   left: -8%;
 }
 
+.why-join-members {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 1.6rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.member-card {
+  background: rgb(255, 236, 153);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 236, 153, 1) 0%,
+    rgba(255, 224, 102, 1) 50%,
+    rgba(255, 212, 59, 1) 100%
+  );
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  padding: 0.8rem 1.6rem;
+}
+
+.member-image {
+  height: 6rem;
+  width: 6rem;
+  object-fit: cover;
+  border-radius: 20rem;
+}
+
 /* ******************************************* */
 /* SECTION-COURSES */
 /* ******************************************* */
@@ -433,6 +463,7 @@ body {
   background-color: #ffcd75;
   border-radius: 8px;
 }
+
 /* ******************************************* */
 /* OLD */
 /* ******************************************* */
