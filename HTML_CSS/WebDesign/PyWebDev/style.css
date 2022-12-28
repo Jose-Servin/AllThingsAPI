@@ -64,15 +64,14 @@ body {
   align-items: center;
 }
 
-.section-heading span {
+.section-heading {
   font-family: "Permanent Marker", "Inter", sans-serif;
   font-size: 2.4rem;
   color: #1971c2;
   letter-spacing: 2px;
 }
 
-.section-heading h2 {
-  padding-bottom: 1.6rem;
+.section-sub-heading {
   font-size: 3.6rem;
   margin-bottom: 9.6rem;
 }
@@ -292,10 +291,6 @@ body {
   position: relative;
   /* background-image: url(../images/edges-design.png); */
   /* background-size: cover; */
-}
-
-.section-heading {
-  color: #222;
 }
 
 .why-join-text-box {
@@ -535,6 +530,45 @@ body {
   padding: 9.6rem 12rem;
 }
 
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.testimonial-quote {
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.testimonial-image {
+  height: 6rem;
+  width: 6rem;
+  object-fit: cover;
+  border-radius: 20rem;
+  margin-right: 1.2rem;
+  justify-self: end;
+}
+
+.testimonial-info-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
+.testimonial-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-author {
+  font-size: 1.6rem;
+  font-style: normal;
+}
+.testimonial-employer {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
 .gallery {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

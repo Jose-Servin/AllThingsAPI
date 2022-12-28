@@ -12,10 +12,6 @@
     />
     <script src="https://unpkg.com/phosphor-icons"></script>
     <link rel="stylesheet" href="style.css" />
-    <script type="module">
-      import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@9/dist/mermaid.esm.min.mjs";
-      mermaid.initialize({ startOnLoad: true });
-    </script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -132,9 +128,11 @@
       </section>
 
       <section class="section-why-join">
-        <div class="section-heading container">
-          <span>Community</span>
-          <h2>Become a PyWebDev Community Member</h2>
+        <div class="container">
+          <span class="section-heading">Community</span>
+          <h2 class="section-sub-heading">
+            Become a PyWebDev Community Member
+          </h2>
         </div>
         <div class="container grid grid--2-columns grid--center-v">
           <!-- STEP 1 -->
@@ -287,9 +285,9 @@
       </section>
 
       <section class="section-courses">
-        <div class="section-heading container">
-          <span>Courses</span>
-          <h2>Start learning today!</h2>
+        <div class="container">
+          <span class="section-heading">Courses</span>
+          <h2 class="section-sub-heading">Start learning today!</h2>
         </div>
         <div class="container grid grid--3-columns">
           <div class="course">
@@ -448,107 +446,95 @@
       </section>
 
       <section class="section-testimonial">
-        <div class="section-heading container">
-          <span>Success Stories</span>
-          <h2>Don't just take our word for it.</h2>
-        </div>
         <div class="testimonial-container grid grid--2-columns">
-          <div class="reviews grid grid--3-columns grid--center-v">
-            <figure>
-              <blockquote>
-                If debugging is the process of removing software bugs, then
-                programming must be the process of putting them in.
-              </blockquote>
-              <figcaption><b>Edsger Dijkstra</b></figcaption>
-            </figure>
-            <figure>
-              <blockquote>
-                If debugging is the process of removing software bugs, then
-                programming must be the process of putting them in.
-              </blockquote>
-              <figcaption><b>Edsger Dijkstra</b></figcaption>
-            </figure>
-            <figure>
-              <blockquote>
-                If debugging is the process of removing software bugs, then
-                programming must be the process of putting them in.
-              </blockquote>
-              <figcaption><b>Edsger Dijkstra</b></figcaption>
-            </figure>
-            <figure>
-              <blockquote>
-                If debugging is the process of removing software bugs, then
-                programming must be the process of putting them in.
-              </blockquote>
-              <figcaption><b>Edsger Dijkstra</b></figcaption>
-            </figure>
-            <figure>
-              <blockquote>
-                If debugging is the process of removing software bugs, then
-                programming must be the process of putting them in.
-              </blockquote>
-              <figcaption><b>Edsger Dijkstra</b></figcaption>
-            </figure>
-            <figure>
-              <blockquote>
-                If debugging is the process of removing software bugs, then
-                programming must be the process of putting them in.
-              </blockquote>
-              <figcaption><b>Edsger Dijkstra</b></figcaption>
-            </figure>
+          <div class="all-testimonials">
+            <span class="section-heading">Success Stories</span>
+            <h2 class="section-sub-heading">
+              Don't just take our word for it.
+            </h2>
+            <div class="reviews grid grid--2-columns grid--center-v">
+              <figure class="testimonial">
+                <blockquote class="testimonial-quote">
+                  "As a manager, PyWebDev helps me show my team new packages and
+                  new ways to solve problems."
+                </blockquote>
+                <div class="testimonial-info-container">
+                  <img
+                    src="../images/community-members/team-member-5.jpg"
+                    alt="team member"
+                    class="testimonial-image"
+                  />
+                  <figcaption class="testimonial-info">
+                    <span class="testimonial-author"> Edsger Dijkstra </span>
+                    <span class="testimonial-employer"> Microsoft </span>
+                  </figcaption>
+                </div>
+              </figure>
+              <figure class="testimonial">
+                <blockquote class="testimonial-quote">
+                  "We think of it as everyone's responsibility in the
+                  organization to be more data-driven. After all, every single
+                  one of us is probably touching data in some way, regardless of
+                  your role."
+                </blockquote>
+                <div class="testimonial-info-container">
+                  <img
+                    src="../images/community-members/team-member-5.jpg"
+                    alt="team member"
+                    class="testimonial-image"
+                  />
+                  <figcaption class="testimonial-info">
+                    <span class="testimonial-author"> Edsger Dijkstra </span>
+                    <span class="testimonial-employer"> Microsoft </span>
+                  </figcaption>
+                </div>
+              </figure>
+              <figure class="testimonial">
+                <blockquote class="testimonial-quote">
+                  "DataCamp is a lot better than other online learning platforms
+                  I've tried. It takes less time, it is more efficient, and you
+                  get hands-on practice."
+                </blockquote>
+                <div class="testimonial-info-container">
+                  <img
+                    src="../images/community-members/team-member-5.jpg"
+                    alt="team member"
+                    class="testimonial-image"
+                  />
+                  <figcaption class="testimonial-info">
+                    <span class="testimonial-author"> Edsger Dijkstra </span>
+                    <span class="testimonial-employer"> Microsoft </span>
+                  </figcaption>
+                </div>
+              </figure>
+              <figure class="testimonial">
+                <blockquote class="testimonial-quote">
+                  "On DataCamp, you learn from the experts. As you are taking
+                  courses, you are really learning from the best instructors in
+                  the world."
+                </blockquote>
+                <div class="testimonial-info-container">
+                  <img
+                    src="../images/community-members/team-member-5.jpg"
+                    alt="team member"
+                    class="testimonial-image"
+                  />
+                  <figcaption class="testimonial-info">
+                    <span class="testimonial-author"> Edsger Dijkstra </span>
+                    <span class="testimonial-employer"> Microsoft </span>
+                  </figcaption>
+                </div>
+              </figure>
+            </div>
           </div>
           <div class="gallery">
             <!-- ROW 1 -->
+            <!-- 
             <img
               src="../images/community-members/team-member-5.jpg"
               alt="team member"
             />
-            <img
-              src="../images/community-members/team-member-5.jpg"
-              alt="team member"
-            />
-            <img
-              src="../images/community-members/team-member-5.jpg"
-              alt="team member"
-            />
-            <img
-              src="../images/community-members/team-member-5.jpg"
-              alt="team member"
-            />
-            <!-- ROW 2 -->
-            <img
-              src="../images/community-members/team-member-5.jpg"
-              alt="team member"
-            />
-            <img
-              src="../images/community-members/team-member-5.jpg"
-              alt="team member"
-            />
-            <img
-              src="../images/community-members/team-member-5.jpg"
-              alt="team member"
-            />
-            <img
-              src="../images/community-members/team-member-5.jpg"
-              alt="team member"
-            />
-            <!-- ROW 3 -->
-            <img
-              src="../images/community-members/team-member-5.jpg"
-              alt="team member"
-            />
-            <img
-              src="../images/community-members/team-member-5.jpg"
-              alt="team member"
-            />
-            <img
-              src="../images/community-members/team-member-5.jpg"
-              alt="team member"
-            />
-            <img
-              src="../images/community-members/team-member-5.jpg"
-              alt="team member"
-            />
+             -->
           </div>
         </div>
       </section>
