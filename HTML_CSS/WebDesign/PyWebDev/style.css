@@ -465,6 +465,7 @@ a {
 /* ******************************************* */
 .section-courses {
   padding: 9.6rem 0;
+  background-image: url("../images/backgrounds/courses-background-3.png");
 }
 
 .course {
