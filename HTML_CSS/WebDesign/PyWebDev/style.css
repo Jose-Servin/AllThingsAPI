@@ -197,7 +197,7 @@ a {
 
 .hero {
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-columns: 55fr 45fr;
   max-width: 130rem;
   /* here we center our hero content */
   margin: 0 auto;
@@ -465,7 +465,6 @@ a {
 /* ******************************************* */
 .section-courses {
   padding: 9.6rem 0;
-  background-image: url("../images/backgrounds/courses-background-3.png");
 }
 
 .course {
@@ -540,10 +539,16 @@ a {
 .all-testimonials {
   padding: 9.6rem 4.8rem;
 }
+
+.testimonial-container {
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
+}
 .reviews {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  row-gap: 6.4rem;
+  row-gap: 8rem;
   column-gap: 9.6rem;
   justify-content: center;
   align-items: center;
@@ -562,8 +567,8 @@ a {
 }
 
 .testimonial-image {
-  height: 6rem;
-  width: 6rem;
+  height: 5rem;
+  width: 5rem;
   object-fit: cover;
   border-radius: 20rem;
   margin-right: 1.2rem;
@@ -594,9 +599,80 @@ a {
   overflow: hidden;
   gap: 1.2rem;
   padding: 1.2rem;
+  align-content: center;
+}
+.gallery-image {
+  overflow: hidden;
 }
 
 .gallery-image img {
   display: block;
   width: 100%;
+  transition: all 0.2s;
+}
+
+.gallery-image img:hover {
+  transform: scale(1.1);
+}
+
+/* ******************************************* */
+/* SECTION-PRICES */
+/* ******************************************* */
+.section-prices {
+  padding: 9.6rem 0;
+}
+.membership-card {
+  background-color: #2b5f89;
+  color: #f7f9fc;
+  padding: 3.2rem;
+}
+
+.membership-header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+  line-height: 1.2;
+}
+
+.membership-name {
+  font-family: "Permanent Marker", "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+  letter-spacing: 0.75;
+}
+
+.membership-name span {
+  color: #ffc053;
+}
+
+.membership-price {
+  font-size: 5.2rem;
+  font-weight: 600;
+}
+
+.membership-price span {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-right: 3px;
+}
+
+.membership-text {
+  font-size: 1.8rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.list-icon {
+  width: 2.5rem;
+  height: 2.5rem;
 }
