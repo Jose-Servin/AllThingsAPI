@@ -91,6 +91,13 @@ a {
   margin-bottom: 9.6rem;
 }
 
+.section-heading-dark-background {
+  color: #f7f9fc;
+}
+
+.section-sub-heading-dark-background {
+  color: #ffd60a;
+}
 /* ******************************************* */
 /* BUTTONS */
 /* ******************************************* */
@@ -616,15 +623,22 @@ a {
 }
 
 /* ******************************************* */
-/* SECTION-PRICES */
+/* SECTION-MEMBERSHIPS */
 /* ******************************************* */
-.section-prices {
+.section-memberships {
   padding: 9.6rem 0;
+  background-color: #132a3d;
 }
 .membership-card {
   background-color: #2b5f89;
   color: #f7f9fc;
   padding: 3.2rem;
+  border-radius: 8px;
+  width: 85%;
+}
+
+.member-card--starter {
+  justify-self: end;
 }
 
 .membership-header {
@@ -657,6 +671,7 @@ a {
 
 .membership-text {
   font-size: 1.8rem;
+  color: #c6c7ca;
 }
 
 .list {
@@ -675,4 +690,28 @@ a {
 .list-icon {
   width: 2.5rem;
   height: 2.5rem;
+}
+
+.membership-sign-up {
+  text-align: center;
+  margin-top: 4.8rem;
+}
+
+.membership-card--pro {
+  position: relative;
+}
+.membership-card--pro::after {
+  font-family: "Permanent Marker", "Inter", sans-serif;
+  content: "Best Value";
+  position: absolute;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  /* font-weight: 600; */
+  letter-spacing: 2.5px;
+  top: 0%;
+  right: -13%;
+  background-color: #ffd43b;
+  padding: 0.5rem;
+  color: #0e1f2e;
+  transform: rotate(35deg);
 }
