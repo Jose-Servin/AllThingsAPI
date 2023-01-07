@@ -480,24 +480,28 @@ a {
 /* ******************************************* */
 .section-courses {
   padding: 9.6rem 0;
+  background-color: #132a3d;
 }
 
 .course {
-  background-color: #f6f7fa;
+  background-color: #f1f3f6;
+
   border-radius: 8px;
-  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.5);
   /* Eliminates the need to add border radius to image element */
-  overflow: hidden;
-  transition: all 0.4s;
+  transition: all 0.25s;
 }
 
 .course:hover {
-  transform: translateY(-1.8rem);
-  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.09);
+  transform: translateY(-3rem);
+  box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.5);
 }
 
 .course-image {
-  background-color: #003049;
+  background-color: #f8f9fa;
+  background-color: #3c4856;
+  background-color: #42576d;
+
   padding: 2.4rem 2.4rem;
   display: flex;
   align-items: center;
@@ -638,15 +642,8 @@ a {
   background-color: #132a3d;
 }
 .membership-card {
-  background: rgb(48, 105, 152);
-  background: linear-gradient(
-    180deg,
-    rgba(48, 105, 152, 1) 0%,
-    rgba(43, 95, 137, 1) 50%,
-    rgba(34, 74, 106, 1) 100%
-  );
-
-  color: #f7f9fc;
+  background-color: #f1f3f6;
+  color: #222;
   padding: 3.2rem 3.2rem 3.2rem 3.2rem;
   border-radius: 8px;
 }
@@ -685,7 +682,7 @@ a {
 
 .membership-text {
   font-size: 1.8rem;
-  color: #c6c7ca;
+  color: #4b4b4b;
 }
 
 .list {
@@ -713,6 +710,8 @@ a {
 
 .membership-card--pro {
   position: relative;
+  background: none;
+  background-color: #fff7d6;
 }
 .membership-card--pro::after {
   font-family: "Permanent Marker", "Inter", sans-serif;
@@ -734,8 +733,12 @@ a {
 /* ******************************************* */
 
 .membership-features {
-  color: whitesmoke;
+  color: white;
+}
+
+.feature-text {
+  font-size: 1.8rem;
 }
 .feature-icon {
-  display: inline-block;
+  font-size: 3.6rem;
 }
