@@ -25,7 +25,9 @@
 
   <body>
     <header class="header">
-      <p id="navbar-logo-text">PyWebDev.org</p>
+      <a href="#">
+        <p id="navbar-logo-text">PyWebDev</p>
+      </a>
       <nav class="nav-div">
         <ul>
           <li class="nav-element">
@@ -52,6 +54,7 @@
       </nav>
     </header>
 
+    <!-- This section is for non-repeating sections of our webpage.  -->
     <main>
       <section class="section-hero">
         <div class="hero">
@@ -785,5 +788,73 @@
         </div>
       </section>
     </main>
+    <!-- Outside of 'main' since we might want to repeat the footer in other pages. -->
+    <footer>
+      <div class="container grid grid--5-columns">
+        <div class="footer-col-1">
+          <div class="footer-col-1-top">
+            <a href="#">
+              <p id="navbar-logo-text">PyWebDev</p>
+            </a>
+
+            <p class="copyright">Copyright &copy; Jose Servin 2023</p>
+          </div>
+          <div class="footer-col-1-bottom">
+            <p class="footer-sub-heading">Contact Us</p>
+
+            <ul class="footer-social-links">
+              <li>
+                <ion-icon name="mail-outline"> </ion-icon>
+                <a href="mailTo:Community@PyWebDev.org">
+                  Community@PyWebDev.org</a
+                >
+              </li>
+              <li>
+                <ion-icon name="logo-twitter"></ion-icon>
+                <p>@PyWebDevCommunity</p>
+              </li>
+              <li>
+                <ion-icon name="location-outline"></ion-icon>
+                <p>P. Sherman, 42 Wallaby Way, Sydney</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-col-2">
+          <p class="footer-heading">PyWebDev</p>
+          <ul class="footer-options">
+            <li>Create Account</li>
+            <li>Log In</li>
+            <li>Pricing</li>
+            <li>Careers</li>
+            <li>Contact PyWebDev Team</li>
+          </ul>
+        </div>
+        <div class="footer-col-3">
+          <p class="footer-heading">Community</p>
+          <ul class="footer-options">
+            <li>About</li>
+            <li>FAQ's</li>
+            <li>Learn More</li>
+            <li>Become a Mentor</li>
+          </ul>
+        </div>
+        <div class="footer-col-4">
+          <p class="footer-heading">Resources</p>
+          <ul class="footer-options">
+            <li>Blog</li>
+            <li>GitHub Repo</li>
+            <li>Road-Maps</li>
+          </ul>
+        </div>
+        <div class="footer-col-5">
+          <p class="footer-heading">Policy</p>
+          <ul class="footer-options">
+            <li>Privacy</li>
+            <li>Security</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

@@ -53,6 +53,7 @@ ul {
 a {
   /* display: inline-block; */
   text-decoration: none;
+  color: inherit;
 }
 
 /* ******************************************* */
@@ -88,6 +89,13 @@ a {
 .grid--4-columns {
   grid-template-columns: repeat(4, 1fr);
 }
+
+.grid--5-columns {
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 3.2rem;
+  justify-items: end;
+}
+
 .grid--center-v {
   align-items: center;
 }
@@ -759,7 +767,7 @@ a {
 }
 
 /* ******************************************* */
-/* CTA */
+/* CTA/ FORM */
 /* ******************************************* */
 
 .section-cta {
@@ -833,4 +841,40 @@ a {
   font-weight: 500;
   font-family: "Permanent Marker", "Inter", sans-serif;
   letter-spacing: 2px;
+}
+
+/* ******************************************* */
+/* FOOTER */
+/* ******************************************* */
+
+footer {
+  padding: 9.6rem 0;
+  background-color: #132a3d;
+  color: #eefbff;
+}
+
+.footer-heading {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+  color: #ffc053;
+}
+.footer-sub-heading {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.footer-col-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-options li {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.footer-options li:last-child {
+  margin-bottom: 0;
 }
