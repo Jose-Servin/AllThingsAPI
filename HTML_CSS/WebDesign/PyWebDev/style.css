@@ -29,6 +29,11 @@ LIGHT YELLOW: #ffd60a
   padding: 0;
   box-sizing: border-box;
 }
+/* 
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(70, 224, 255, 0.7);
+} */
 
 html {
   font-size: 62.5%;
@@ -115,6 +120,7 @@ a {
   align-self: flex-start;
 }
 
+.button,
 .button:link,
 .button:visited {
   background-color: #ffc053;
@@ -125,6 +131,8 @@ a {
   font-size: 1.7rem;
   font-weight: 600;
   transition: background-color 0.3sec;
+  border: none;
+  cursor: pointer;
 }
 
 .button:hover,
@@ -132,6 +140,7 @@ a {
   background-color: #b39429;
 }
 
+.button-small,
 .button-small:link,
 .button-small:visited {
   text-align: center;
@@ -760,7 +769,8 @@ a {
 .cta--container {
   display: grid;
   grid-template-columns: 0.6fr 0.4fr;
-  background-color: #eefbff;
+  background-color: #132a3d;
+  color: whitesmoke;
   box-shadow: 0 2rem 3rem 0 rgb(0 0 0 / 12%);
   border-radius: 8px;
   height: 50rem;
@@ -769,17 +779,17 @@ a {
 
 .cta-text-box {
   padding: 2.4rem 2.4rem 4.8rem 4.8rem;
-  color: #132a3d;
+  color: whitesmoke;
 }
 
 .cta-text-box .step-heading {
   font-size: 2.8rem;
-  margin-bottom: 4.8rem;
+  margin-bottom: 1.2rem;
   font-weight: 700;
 }
 .cta-text-box .step-description {
   font-size: 1.8rem;
-  margin-bottom: 6.2rem;
+  margin-bottom: 6.4rem;
 }
 
 .cta-image-box {
@@ -791,5 +801,36 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 3.2rem;
-  row-gap: 2.4rem;
+  row-gap: 4rem;
+}
+
+/* Form elements */
+
+.cta-form label {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+  font-family: inherit;
+}
+
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1.6em;
+  font-family: inherit;
+  border-radius: 6px;
+  background-color: whitesmoke;
+  border: none;
+}
+
+.cta-form button {
+  font-family: inherit;
+  align-self: flex-end;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-family: "Permanent Marker", "Inter", sans-serif;
+  letter-spacing: 2px;
 }
