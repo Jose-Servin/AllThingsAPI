@@ -43,8 +43,8 @@ body {
   font-family: "Oxygen", sans-serif;
   line-height: 1.6;
   letter-spacing: 1px;
-  background-color: #f6f7fa;
-  color: #32363a;
+  background-color: rgb(34, 39, 49);
+  color: #ffffff;
 }
 ul {
   list-style: none;
@@ -167,12 +167,12 @@ a {
 .header {
   display: flex;
   justify-content: space-between;
-  color: #222;
+  color: #ffffff;
   align-items: center;
   gap: 4.8rem;
   /* FOR STICKY HEADER */
   height: 9.6rem;
-  padding: 0 12rem;
+  padding: 0 36rem;
 }
 
 /* ******************************************* */
@@ -199,7 +199,7 @@ a {
 
 .main-nav-links:link,
 .main-nav-links:visited {
-  color: #0e1f2e;
+  color: #ffffff;
   display: inline-block;
   font-size: 1.6rem;
   font-weight: 600;
@@ -209,7 +209,7 @@ a {
 
 .main-nav-links:hover,
 .main-nav-links:active {
-  color: #0e1f2e;
+  color: #ffffff;
   border-bottom: 3px solid #ffd43b;
 }
 
@@ -222,7 +222,7 @@ a {
 /* ******************************************* */
 
 .section-hero {
-  color: #222;
+  color: #ffffff;
   padding: 3.2rem 0 9.6rem 0;
 }
 
@@ -294,7 +294,7 @@ a {
 }
 
 .community-text p span {
-  color: #1971c2;
+  color: #799bc2;
   margin: 0;
 }
 
@@ -304,6 +304,7 @@ a {
 
 .section-featured-in {
   padding: 3.2rem 0 3.2rem 0;
+  background-color: rgb(223, 225, 218);
 }
 
 .featured-in-heading {
@@ -311,7 +312,7 @@ a {
   margin-bottom: 2.4rem;
   text-align: center;
   font-weight: 700;
-  color: #666;
+  color: #000;
 }
 
 .featured-in-logos {
@@ -323,7 +324,7 @@ a {
   height: 4.2rem;
   border-radius: 8px;
   filter: brightness(0);
-  opacity: 50%;
+  opacity: 65%;
 }
 
 /* ******************************************* */
@@ -332,6 +333,8 @@ a {
 .section-why-join {
   padding: 9.6rem 0;
   position: relative;
+  background-color: rgb(223, 225, 218);
+  color: #000000;
 }
 
 .why-join-text-box {
@@ -496,12 +499,11 @@ a {
 /* ******************************************* */
 .section-courses {
   padding: 9.6rem 0;
-  background-color: #132a3d;
 }
 
 .course {
-  background-color: #f1f3f6;
-
+  background-color: rgb(223, 225, 218);
+  color: #000;
   border-radius: 8px;
   box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.5);
   /* Eliminates the need to add border radius to image element */
@@ -514,9 +516,7 @@ a {
 }
 
 .course-image {
-  background-color: #f8f9fa;
-  background-color: #3c4856;
-  background-color: #42576d;
+  background-color: rgb(41, 62, 78);
 
   padding: 2.4rem 2.4rem;
   display: flex;
@@ -576,6 +576,8 @@ a {
 }
 
 .testimonial-container {
+  background-color: rgb(223, 225, 218);
+  color: #000;
   display: grid;
   grid-template-columns: 55fr 45fr;
   align-items: center;
@@ -655,11 +657,12 @@ a {
 /* ******************************************* */
 .section-memberships {
   padding: 9.6rem 0;
-  background-color: #132a3d;
 }
 .membership-card {
-  background-color: #eefbff;
-  color: #222;
+  background-color: #213048;
+  background-color: rgb(41, 62, 78);
+
+  color: #ffffff;
   padding: 3.2rem 3.2rem 3.2rem 3.2rem;
   border-radius: 8px;
 }
@@ -698,7 +701,7 @@ a {
 
 .membership-text {
   font-size: 1.8rem;
-  color: #4b4b4b;
+  color: #ffffff;
 }
 
 .list {
@@ -727,7 +730,8 @@ a {
 .membership-card--pro {
   position: relative;
   background: none;
-  background-color: #eefbff;
+  background-color: rgb(41, 62, 78);
+  background-color: #213048;
 
   /* 
   #00AFB6
@@ -848,8 +852,8 @@ a {
 
 footer {
   padding: 9.6rem 0;
-  background-color: #132a3d;
-  color: #eefbff;
+  background-color: #191919;
+  color: #ffffff;
 }
 
 .footer-heading {
