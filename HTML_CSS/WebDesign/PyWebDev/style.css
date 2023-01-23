@@ -165,6 +165,7 @@ a {
 /* ******************************************* */
 
 .header {
+  max-width: 160rem;
   display: flex;
   justify-content: space-between;
   color: #ffffff;
@@ -172,7 +173,7 @@ a {
   gap: 4.8rem;
   /* FOR STICKY HEADER */
   height: 9.6rem;
-  padding: 0 36rem;
+  padding: 1.4rem;
 }
 
 /* ******************************************* */
