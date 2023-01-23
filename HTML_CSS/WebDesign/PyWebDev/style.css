@@ -304,7 +304,6 @@ a {
 
 .section-featured-in {
   padding: 3.2rem 0 3.2rem 0;
-  background-color: rgb(223, 225, 218);
 }
 
 .featured-in-heading {
@@ -312,7 +311,7 @@ a {
   margin-bottom: 2.4rem;
   text-align: center;
   font-weight: 700;
-  color: #000;
+  color: #f7f9fc9e;
 }
 
 .featured-in-logos {
@@ -323,7 +322,7 @@ a {
 .featured-in-logos img {
   height: 4.2rem;
   border-radius: 8px;
-  filter: brightness(0);
+  filter: brightness(0) invert(1);
   opacity: 65%;
 }
 
@@ -775,14 +774,15 @@ a {
 
 .section-cta {
   padding: 9.6rem 0;
+  background-color: rgb(223, 225, 218);
 }
 
 .cta--container {
   display: grid;
   grid-template-columns: 0.6fr 0.4fr;
-  background-color: #132a3d;
+  background-color: #213048;
   color: whitesmoke;
-  box-shadow: 0 2rem 3rem 0 rgb(0 0 0 / 12%);
+  box-shadow: 0 2rem 2rem 0 rgb(0 0 0 / 30%);
   border-radius: 8px;
   height: 50rem;
   overflow: hidden;
