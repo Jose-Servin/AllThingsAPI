@@ -1,0 +1,105 @@
+/* 1rem = 1em = 16px 
+
+
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+/* 
+RESPONDING TO SMALLER LAPTOPS 
+*/
+
+/* 
+Below 1600px 
+*/
+@media (max-width: 100em) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 
+RESPONDING TO LANDSCAPE TABLE 
+*/
+
+/* 
+Below 1250px 
+*/
+@media (max-width: 78.125em) {
+  .header {
+    max-width: 125rem;
+  }
+
+  .hero-title {
+    font-size: 4rem;
+  }
+
+  html {
+    font-size: 56.25%;
+  }
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+
+  .section-sub-heading {
+    font-size: 3rem;
+  }
+
+  .step-number {
+    font-size: 5.2rem;
+  }
+
+  .step-heading {
+    font-size: 2.4rem;
+  }
+
+  .testimonial-quote {
+    font-size: 1.6rem;
+  }
+
+  .feature-icon {
+    font-size: 2.4rem;
+  }
+
+  .feature-text {
+    font-size: 1.6rem;
+  }
+
+  .header {
+    padding: 0 3.2rem;
+  }
+
+  .hero {
+    gap: 2.4rem;
+  }
+
+  .nav-div ul {
+    gap: 6.4rem;
+  }
+
+  .reviews {
+    column-gap: 4.8rem;
+  }
+
+  .all-testimonials {
+    padding: 9.6rem 2.4rem;
+  }
+}
+
+/* 
+RESPONDING TO TABLES 
+*/
+
+/* 
+Below 1030px 
+*/
+
+@media (max-width: 64.375em) {
+  html {
+    font-size: 50%;
+  }
+}
