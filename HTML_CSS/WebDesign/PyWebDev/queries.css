@@ -103,3 +103,128 @@ Below 1030px
     font-size: 50%;
   }
 }
+
+/* 
+Below 1030px 
+*/
+
+@media (max-width: 59em) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
+  }
+
+  .hero-images,
+  .hero-text-box {
+    /* this works because the image is an in-line element and text-align works on both text and in-line elements */
+    text-align: center;
+  }
+
+  .hero-images img {
+    width: 75%;
+  }
+
+  .community {
+    justify-content: center;
+    margin-top: 2.4rem;
+  }
+
+  .featured-in-logos img {
+    height: 3.2rem;
+  }
+  .testimonial-container {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .cta--container {
+    grid-template-columns: 0.55fr 0.45fr;
+  }
+
+  .cta-text-box .step-heading {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    /* padding: 0 8rem; */
+  }
+
+  .cta-text-box .step-description {
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+    /* padding: 0 8rem; */
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+    row-gap: 1.8rem;
+    column-gap: 0;
+  }
+
+  .cta-form button {
+    margin-top: 1rem;
+  }
+
+  /* Mobile Navigation */
+  .button-mobile-nav {
+    display: block;
+  }
+
+  .nav-div {
+    background-color: #383d46;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform: translateX(100%);
+    /* hidden by default 
+    display:none; doesn't allow for transitions so using another approach. 
+    */
+    transition: all 0.5s ease-in;
+    /* 1. Hide visually  */
+    opacity: 0;
+    /* 2. Make element unaccessible to mouse and keyboard */
+    pointer-events: none;
+    /* 3. Hide from screen readers */
+    visibility: hidden;
+  }
+
+  .nav-open .nav-div {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu"] {
+    display: none;
+  }
+
+  .nav-div ul {
+    flex-direction: column;
+  }
+
+  .main-nav-links:link,
+  .main-nav-links:visited {
+    font-size: 3rem;
+  }
+
+  .nav-element {
+    gap: 1rem;
+  }
+  .nav-icon {
+    font-size: 3rem;
+  }
+}
