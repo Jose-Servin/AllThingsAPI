@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Study Rings Timer</title>
+  </head>
+  <body>
+    <section>
+      <svg height="600" width="600">
+        <!-- stroke-dasharray prop = perimeter of the circle  -->
+        <!-- transform prop is given angle of transformation and coordinates of rotation. -->
+        <circle
+          r="250"
+          cx="300"
+          cy="300"
+          fill="transparent"
+          stroke="#ffd43b"
+          stroke-width="22"
+          transform="rotate(-90 300 300)"
+          stroke-opacity="0.9"
+          stroke-linecap="round"
+        ></circle>
+      </svg>
+      <div class="timer-components">
+        <input type="text" name="" id="duration" value="25" />
+        <div class="timer-buttons">
+          <button id="start" class="btn">
+            <ion-icon name="play"></ion-icon>
+          </button>
+          <button id="pause" class="btn">
+            <ion-icon name="pause"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </section>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="timer.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+COLORS
+Ring 1: #ffd43b
+
+
+
+*/
+
+/* ******************************************* */
+/* GLOBAL RESETS */
+/* ******************************************* */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  /* scroll-behavior: smooth; */
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  background-image: linear-gradient(
+    to right top,
+    #191970,
+    #272277,
+    #332b7d,
+    #3e3484,
+    #483d8b
+  );
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input {
+  width: 50%;
+  font-size: 3.8rem;
+  border-radius: 8px;
+  border: solid 1px #314163;
+  padding: 1rem 1rem;
+  text-align: center;
+}
+
+ion-icon {
+  font-size: 3rem;
+}
+
+/* ******************************************* */
+/* Containers */
+/* ******************************************* */
+section {
+  max-width: 135rem;
+  margin: 18rem auto;
+  /* ADDED TO THE CONTENT SO PADDING EXISTS IN SMALLER VIEW PORTS */
+  padding: 3.2rem 3.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  position: relative;
+}
+
+.timer-components {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  gap: 1.4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.timer-buttons {
+  display: flex;
+  gap: 2.4rem;
+  justify-content: space-between;
+}
+
+.btn {
+  background-color: #ffc053;
+  color: black;
+  text-decoration: none;
+  padding: 0.8rem 1.6rem;
+  display: inline-block;
+  font-size: 1.7rem;
+  font-weight: 600;
+  transition: background-color 0.3sec;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
