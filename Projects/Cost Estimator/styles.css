@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(233, 223, 255);
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+  color: rgb(44, 44, 44);
+  box-sizing: border-box;
+}
+
+h1 {
+  color: rgb(83, 49, 156);
+  margin-bottom: 1.4rem;
+}
+
+.container {
+  background-color: white;
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  position: relative;
+}
+
+.tabs {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: rgb(200, 175, 255);
+  padding: 32px;
+}
+
+.tabs p {
+  padding: 16px;
+}
+
+.tabs p:hover {
+  color: rgb(83, 49, 156);
+  cursor: pointer;
+}
+
+.tabs .active {
+  color: rgb(83, 49, 156);
+  position: relative;
+}
+
+.line {
+  height: 3px;
+  background-color: rgb(231, 231, 231);
+  width: 100%;
+  top: 98px;
+  position: absolute;
+}
+
+.tabs .active::before {
+  content: "";
+  width: 200%;
+  height: 4px;
+  background-color: purple;
+  position: absolute;
+  bottom: -16px;
+  left: -50%;
+  z-index: 2;
+  border-radius: 15px;
+}
+
+.toggle-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin: 24px 0px;
+}
+
+.toggle-wrapper img {
+  height: 50px;
+}
+.toggle {
+  background-color: rgb(83, 49, 156);
+  height: 38px;
+  width: 142px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6px 0 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+
+.toggle span:first-of-type {
+  color: white;
+}
+
+.toggle span:last-of-type {
+  background-color: white;
+  color: rgb(83, 49, 156);
+  padding: 4px 16px;
+  border-radius: 20px;
+}
+
+.sessions-header {
+  width: 200px;
+  background-color: rgb(250, 247, 255);
+  text-align: center;
+  padding: 32px;
+  width: 50%;
+  margin: 24px 0px;
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+
+.sessions-header p {
+  color: rgb(44, 44, 44);
+  font-weight: 700;
+}
+
+.sessions-header .number {
+  color: rgb(83, 49, 156);
+  font-size: 64px;
+}
+
+.session-text {
+  margin: 16px 0px 32px 0px;
+  width: 75%;
+  line-height: 32px;
+}
+
+.slider {
+  width: 80%;
+  margin: 16px 0px 32px 0px;
+  position: relative;
+}
+
+.slider .bar {
+  width: 100%;
+  height: 16px;
+  background-color: rgb(248, 248, 248);
+  border: 1px solid rgb(210, 210, 210);
+  border-radius: 20px;
+}
+
+.slider .progress {
+  width: 30%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  height: 18px;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(53, 10, 74, 1) 36%,
+    rgba(83, 49, 156, 1) 100%
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slider .point {
+  height: 24px;
+  width: 24px;
+  background-color: rgb(83, 49, 156);
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+  left: 29%;
+  border: 2px solid white;
+  transition: 0.15s transform ease;
+}
+
+.slider .point:hover {
+  cursor: pointer;
+  transform: scale(1.25);
+}
+
+.scale ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+  font-weight: 700;
+  color: rgb(166, 166, 166);
+}
+
+.card-wrapper {
+  display: flex;
+  gap: 44px;
+  margin: 32px;
+}
+
+.card {
+  background-color: rgb(250, 247, 255);
+  border-radius: 10px;
+  padding: 16px 32px;
+  box-shadow: 0px 3px 11px 11px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-weight: 700;
+  color: rgb(83, 49, 156);
+  transition: 0.15s transform ease;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+.card p {
+  margin-bottom: 20px;
+}
+
+.top-section {
+  text-transform: uppercase;
+}
+
+.price {
+  color: black;
+  font-size: 38px;
+}
+
+.card button {
+  border: none;
+  padding: 16px;
+  background-color: rgb(83, 49, 156);
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: 0.15s transform ease;
+}
+
+.card button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.card hr {
+  margin: 0 auto;
+  width: 80%;
+  border: 1px solid rgb(210, 210, 210);
+  border-radius: 2px;
+  margin-bottom: 16px;
+}
+
+.card .save {
+  width: 100%;
+  color: white;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(53, 10, 74, 1) 36%,
+    rgba(83, 49, 156, 1) 100%
+  );
+  position: absolute;
+  top: -15px;
+  left: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.save p {
+  margin: 0;
+}
