@@ -274,3 +274,21 @@ h1 {
 .save p {
   margin: 0;
 }
+
+@media only screen and (max-width: 750px) {
+  .card {
+    width: 100%;
+  }
+  .card-wrapper {
+    flex-wrap: wrap-reverse;
+  }
+
+  .session-text,
+  .slider {
+    width: 90%;
+  }
+
+  .sessions-header {
+    width: 60%;
+  }
+}
