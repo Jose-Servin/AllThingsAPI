@@ -6,6 +6,37 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+.navbar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 64px 0;
+  max-width: 88%;
+  margin: 0 auto;
+}
+
+.navbar-header .left {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.navbar-header a {
+  text-decoration: none;
+}
+
+.navbar-header .right {
+  display: flex;
+  gap: 32px;
+}
+
+.navbar-header .right a {
+  color: black;
+}
+
+.navbar-header .right img {
+  width: 24px;
+  height: 24px;
+}
 
 .project-grid {
   display: grid;
