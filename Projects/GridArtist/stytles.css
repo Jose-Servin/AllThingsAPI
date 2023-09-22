@@ -5,6 +5,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
 }
 .navbar-header {
   display: flex;
@@ -36,6 +37,17 @@ body {
 .navbar-header .right img {
   width: 24px;
   height: 24px;
+}
+
+.navbar-header .hamburger {
+  display: none;
+}
+
+.bar {
+  background-color: black;
+  height: 4px;
+  width: 36px;
+  border-radius: 6px;
 }
 
 .project-grid {
@@ -152,9 +164,34 @@ body {
       "foam foam"
       "dimensional dimensional";
     max-width: 95%;
+    margin-top: 100px;
   }
 
   .project .overlay {
     font-size: 24px;
+  }
+
+  .navbar-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: white;
+    width: 100%;
+    padding: 16px 42px;
+  }
+
+  .navbar-header .right {
+    display: none;
+  }
+
+  .navbar-header .hamburger {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
   }
 }
