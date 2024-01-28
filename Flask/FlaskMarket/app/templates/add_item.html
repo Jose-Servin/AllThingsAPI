@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}
+Add Item
+{% endblock %}
+
+{% block content %}
+
+<h1>Add Item</h1>
+
+<form method="post" action="{{ url_for('market.add_item') }}">
+    <label for="name">Name:</label>
+    <input type="text" name="name" required><br>
+
+    <label for="barcode">Barcode:</label>
+    <input type="text" name="barcode" required><br>
+
+    <label for="price">Price:</label>
+    <input type="number" name="price" required><br>
+
+    <label for="description">Description:</label>
+    <textarea name="description" rows="4" cols="50"></textarea><br>
+
+    <button type="submit">Add Item</button>
+</form>
+
+<a href="{{ url_for('market.market_page') }}">Back to Market</a>
+
+{% endblock %}

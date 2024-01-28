@@ -31,12 +31,12 @@
             <ul class="navbar-nav mr-auto">
                <li class="nav-item active">
                {# the url_for is for the defined route not html #}
-                  <a class="nav-link" href="{{ url_for('home_page') }}"
+                  <a class="nav-link" href="{{ url_for('home.home_page') }}"
                      >Home <span class="sr-only">(current)</span></a
                      >
                </li>
                <li class="nav-item">
-                  <a class="nav-link" href="{{ url_for('market_page') }}">Market</a>
+                  <a class="nav-link" href="{{ url_for('market.market_page') }}">Market</a>
                </li>
             </ul>
             <ul class="navbar-nav">
