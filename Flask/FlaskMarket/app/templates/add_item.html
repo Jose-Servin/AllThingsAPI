@@ -8,6 +8,7 @@ Add Item
 <h1>Add Item</h1>
 
 <form method="post" action="{{ url_for('market.add_item') }}">
+    {{ form.hidden_tag() }}
     <label for="name">Name:</label>
     <input type="text" name="name" required><br>
 
