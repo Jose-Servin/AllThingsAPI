@@ -7,7 +7,7 @@ def add_item_with_owner(item_data, user_data):
 
     with app.app_context():
         # Check if the specified user already exists
-        user = User.query.filter_by(username=user_data['username']).first()
+        user = User.query.filter_by(username=user_data["username"]).first()
 
         if not user:
             # If the user doesn't exist, create a new user
@@ -23,9 +23,17 @@ def add_item_with_owner(item_data, user_data):
 
 if __name__ == "__main__":
     # Example usage
-    item_data = {'name': 'IPad Air', 'barcode': '4356567',
-                 'price': 350, 'description': '10th Gen Ipad'}
-    user_data = {'username': 'Baker', 'email_address': 'new_user@example.com',
-                 'password_hash': 'hashed_password', 'budget': 2000}
+    item_data = {
+        "name": "IPad Air",
+        "barcode": "4356567",
+        "price": 350,
+        "description": "10th Gen Ipad",
+    }
+    user_data = {
+        "username": "Baker",
+        "email_address": "new_user@example.com",
+        "password_hash": "hashed_password",
+        "budget": 2000,
+    }
 
     add_item_with_owner(item_data, user_data)

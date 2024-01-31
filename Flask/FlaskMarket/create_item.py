@@ -13,6 +13,10 @@ def create_item(item_data):
 
 
 if __name__ == "__main__":
-    item_data = {'name': 'Mac Book Pro', 'barcode': '12341234',
-                 'price': 3200, 'description': '16in M3 Max'}
+    item_data = {
+        "name": "Mac Book Pro",
+        "barcode": "12341234",
+        "price": 3200,
+        "description": "16in M3 Max",
+    }
     create_item(item_data)

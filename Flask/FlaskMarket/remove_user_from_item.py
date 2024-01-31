@@ -29,7 +29,8 @@ def remove_user_from_item(item_name, username):
             print(f"User '{username}' removed from the item '{item_name}'.")
         else:
             print(
-                f"User '{username}' is not the owner of the item '{item_name}'. No action taken.")
+                f"User '{username}' is not the owner of the item '{item_name}'. No action taken."
+            )
 
 
 if __name__ == "__main__":

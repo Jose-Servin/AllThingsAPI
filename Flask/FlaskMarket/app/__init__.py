@@ -13,9 +13,9 @@ def create_app():
     app = Flask(__name__)
     # database_uri = 'sqlite:///' + os.path.join(app.instance_path, 'market.db')
     database_uri = "sqlite:////Users/joseservin/AllThingsFullStack/Flask/FlaskMarket/app/instance/market.db"
-    app.config['SQLALCHEMY_DATABASE_URI'] = database_uri
-    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-    app.config['SECRET_KEY'] = 'ec9439cfc6c796ae2029594d'
+    app.config["SQLALCHEMY_DATABASE_URI"] = database_uri
+    app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
+    app.config["SECRET_KEY"] = "ec9439cfc6c796ae2029594d"
 
     # Initialize extensions
     bcrypt.init_app(app)
