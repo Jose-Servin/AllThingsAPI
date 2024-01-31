@@ -1,18 +1,28 @@
 from flask import Blueprint, render_template, request, redirect, url_for
 from app.models import Item
 from app import db
+from flask_login import login_required
 
 market_bp = Blueprint('market', __name__)
 
 
 @market_bp.route('/market')
+# decorators are functions that execute before our defined function
+@login_required
 def market_page():
     # Query items from the Item table
     items = Item.query.all()
 
     # Convert the SQLAlchemy objects to a list of dictionaries
-    items_data = [{'id': item.id, 'name': item.name,
-                   'barcode': item.barcode, 'price': item.price} for item in items]
+    items_data = [
+        {
+            'id': item.id,
+            'name': item.name,
+            'barcode': item.barcode,
+            'price': item.price
+        }
+        for item in items
+    ]
 
     return render_template('market.html', items=items_data)
 

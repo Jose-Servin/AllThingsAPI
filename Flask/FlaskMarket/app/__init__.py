@@ -1,8 +1,12 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 import os
+from flask_bcrypt import Bcrypt
+from flask_login import LoginManager
 
 db = SQLAlchemy()
+bcrypt = Bcrypt()
+login_manager = LoginManager()
 
 
 def create_app():
@@ -13,8 +17,14 @@ def create_app():
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     app.config['SECRET_KEY'] = 'ec9439cfc6c796ae2029594d'
 
-    # Initialize extensions, blueprints, etc.
+    # Initialize extensions
+    bcrypt.init_app(app)
+    login_manager.init_app(app)
+    # Configuring what view to return if login_required decorator fails
+    login_manager.login_view = "login.login_page"
+    login_manager.login_message_category = "info"
     db.init_app(app)
+
     with app.app_context():
         db.create_all()
 
@@ -22,9 +32,13 @@ def create_app():
     from app.routes.home import home_bp
     from app.routes.market import market_bp
     from app.routes.register import register_bp
+    from app.routes.login import login_bp
+    from app.routes.logout import logout_bp
 
     app.register_blueprint(home_bp)
     app.register_blueprint(market_bp)
     app.register_blueprint(register_bp)
+    app.register_blueprint(login_bp)
+    app.register_blueprint(logout_bp)
 
     return app
