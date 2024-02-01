@@ -29,7 +29,7 @@
         </div>
     </div>
 </div>
-<!-- Purchase Confirm Modal Window-->
+<!-- Purchase Item Confirm Modal Window-->
 <div class="modal fade" id="Modal-PurchaseConfirm-{{ item.id }}"
     tabindex="-1"
     aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -45,7 +45,22 @@
                 </button>
             </div>
             <div class="modal-body">
-                Are you sure you want to buy {{ item.name }} for ${{ item.price }} ?
+                {# We can access the purchase_form because it's passed as context in our market.market_page route #}
+                <form method="POST">
+                    {{ purchase_form.hidden_tag() }}
+                    <h4 class="text-center">
+                        Are you sure you want to buy {{ item.name }} for {{ item.price }}$ ?
+                    </h4>
+                    <br>
+                    <h6 class="text-center">
+                        By clicking Purchase, you will purchase this item.
+                    </h6>
+                    <br>
+                    {# The backend will consume the input element info in our Market route #}
+                    {# This is how our backend will know what item was purchased. #}
+                    <input id="purchased_item" name="purchased_item" type="hidden" value="{{item.name}}">
+                    {{ purchase_form.submit(class="btn btn-outline-success btn-block") }}
+                </form>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary"

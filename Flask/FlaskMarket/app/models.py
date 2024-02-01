@@ -40,6 +40,12 @@ class User(db.Model, UserMixin):
         """
         return "{:,}".format(self.budget)
 
+    def can_purchase(self, item_to_purchase):
+        return self.budget >= item_to_purchase.price
+
+    def can_sell(self, item_to_sell):
+        return item_to_sell in self.items
+
 
 class Item(db.Model):
     id = db.Column(db.Integer(), primary_key=True)
@@ -51,3 +57,17 @@ class Item(db.Model):
 
     def __repr__(self):
         return f"Item {self.name}"
+
+    def set_owner(self, user):
+        # assign ownership to the current user who is logged in
+        self.owner = user.id
+        # decrease current user budget - item price
+        user.budget -= self.price
+        db.session.commit()
+
+    def remove_owner(self, user):
+        # current user is removed as owner of item
+        self.owner = None
+        # increase current user budget by item price
+        user.budget += self.price
+        db.session.commit()

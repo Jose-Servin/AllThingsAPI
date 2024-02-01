@@ -22,7 +22,6 @@ Market Page
          <tbody>
             <!-- Your rows inside the table HERE: -->
             {% for item in items %}
-
             {% include 'includes/items_modals.html' %}
             <tr>
                <td>{{ item.id }}</td>
@@ -42,6 +41,28 @@ Market Page
    <div class="col-4">
       <h2>Owned Items</h2>
       <p>Click on an Itemt to sell back to the Market.</p>
+      <div class="row">
+         {%for owned_item in owned_items%}
+         {% include 'includes/owned_items_modals.html' %}
+         {# make sure to always define your grid system #}
+         <div class="col-md-6">
+            <div style="margin-bottom: 5px" class="card text-center bg-dark">
+               <div class="card-body">
+                  <h5 class="card-title">{{ owned_item.name }}</h5>
+                  {# data-target is what triggers our Modal window #}
+                  <button type="button" class="btn btn-outline-danger" style="margin-bottom: 5px"
+                     data-toggle="modal" data-target="#Modal-SellingConfirm-{{ owned_item.id }}">
+                  Sell this Item
+                  </button>
+                  <p class="card-text"><strong>
+                     This item costs ${{ owned_item.price }}
+                     </strong>
+                  </p>
+               </div>
+            </div>
+         </div>
+         {%endfor%}
+      </div>
    </div>
 </div>
 {% endblock %}
