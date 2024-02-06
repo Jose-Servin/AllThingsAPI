@@ -1,8 +1,9 @@
 from flask import Blueprint, render_template, request, redirect, url_for, flash
-from app.models import Item
+from app.models.item import Item
 from app import db
 from flask_login import login_required, current_user
-from app.forms import PurchaseForm, SellItemForm
+from app.forms.purchase_item_form import PurchaseForm
+from app.forms.sell_item_form import SellItemForm
 
 market_bp = Blueprint("market", __name__)
 
@@ -26,12 +27,14 @@ def market_page():
             if current_user.can_purchase(purchased_item):
                 purchased_item.set_owner(current_user)
                 flash(
-                    f"Congratulations! You purchased {purchased_item.name} for ${purchased_item.price}",
+                    f"Congratulations! You purchased {
+                        purchased_item.name} for ${purchased_item.price}",
                     category="success",
                 )
             else:
                 flash(
-                    f"Unfortunately, you don't have enough money to purchase {purchased_item.name}!",
+                    f"Unfortunately, you don't have enough money to purchase {
+                        purchased_item.name}!",
                     category="danger",
                 )
 
@@ -41,9 +44,11 @@ def market_page():
         if sold_item:
             if current_user.can_sell(sold_item):
                 sold_item.remove_owner(current_user)
-                flash(f"Congratulations! You sold {sold_item.name} back to market!", category='success')
+                flash(f"Congratulations! You sold {
+                      sold_item.name} back to market!", category='success')
             else:
-                flash(f"Something went wrong with selling {sold_item.name}", category='danger')
+                flash(f"Something went wrong with selling {
+                      sold_item.name}", category='danger')
 
         # This redirect will allow user to continue purchasing items
         return redirect(url_for("market.market_page"))

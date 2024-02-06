@@ -1,6 +1,6 @@
 from flask import Blueprint, render_template, redirect, url_for, flash
-from app.forms import LoginForm
-from app.models import User
+from app.forms.login_form import LoginForm
+from app.models.user import User
 from flask_login import login_user
 
 login_bp = Blueprint("login", __name__)
@@ -10,7 +10,8 @@ login_bp = Blueprint("login", __name__)
 def login_page():
     form = LoginForm()
     if form.validate_on_submit():
-        attempted_user = User.query.filter_by(username=form.username.data).first()
+        attempted_user = User.query.filter_by(
+            username=form.username.data).first()
         if attempted_user and attempted_user.check_password_correction(
             attempted_password=form.password.data
         ):

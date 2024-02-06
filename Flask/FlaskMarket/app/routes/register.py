@@ -1,7 +1,7 @@
 from flask import Blueprint, render_template, request, redirect, url_for, flash
 from app import db
-from app.forms import RegisterForm
-from app.models import User
+from app.forms.register_form import RegisterForm
+from app.models.user import User
 from flask_login import login_user
 
 register_bp = Blueprint("register", __name__)
@@ -24,7 +24,8 @@ def register_page():
         # After registering login the user and redirect to market.market_page route
         login_user(user_to_create)
         flash(
-            f"Account created successfully! You are now logged in as {user_to_create.username}",
+            f"Account created successfully! You are now logged in as {
+                user_to_create.username}",
             category="success",
         )
         return redirect(url_for("market.market_page"))
