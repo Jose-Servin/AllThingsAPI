@@ -16,11 +16,9 @@ class User(db.Model, UserMixin):
     budget = db.Column(db.Integer(), nullable=False, default=1000)
     items = db.relationship("Item", backref="owned_user", lazy=True)
 
-    # Here we are taking the password_hash, converting it to an attribute
-    # called password and hashing it
     @property
     def password(self):
-        return self.password
+        raise AttributeError("Password is not a readable attribute.")
 
     @password.setter
     def password(self, plain_text_password):
