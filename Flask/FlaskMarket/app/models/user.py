@@ -12,8 +12,12 @@ class User(db.Model, UserMixin):
     username = db.Column(db.String(length=30), nullable=False, unique=True)
     email_address = db.Column(db.String(length=50),
                               nullable=False, unique=True)
+    # For security reasons, we don't store the password but rather a password_hash
+    # We specify a length of 60 because that is the length the hashing algorithm returns.
     password_hash = db.Column(db.String(length=60), nullable=False)
     budget = db.Column(db.Integer(), nullable=False, default=1000)
+    # From the relationship we defined, we can view the User if we have an Item
+    # by looking at the Item.owned_user
     items = db.relationship("Item", backref="owned_user", lazy=True)
 
     @property

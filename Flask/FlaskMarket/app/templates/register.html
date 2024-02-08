@@ -6,9 +6,10 @@ Register Page
 {% block content %}
 {# center aligns all text #}
 <body class="text-center">
-{# stops elements from taking up full width #}
+{# class="container" stops our form from taking up the full width #}
     <div class="container">
-    {# because of POST we need the app secret key configured #}
+    {# because our form uses the POST reqeuest we need the app secret key configured #}
+    {# see app/__init__.py for secret key configuration #}
         <form method="POST" class="form-register" style="color:white">
             {# Used by Flask-WTF to implement CSRF protection #}
             {{ form.hidden_tag() }}
@@ -17,6 +18,7 @@ Register Page
                 Please Create your Account
             </h1>
             <br>
+            {# This label is coming from our ./forms/register_form.py label definition #}
             {{ form.username.label() }}
             {{ form.username(class="form-control", placeholder="User Name") }}
 
@@ -32,8 +34,8 @@ Register Page
             <br>
 
             <div class="checkbox mb-3">
-               <h6>Already have an account?</h6>
-               <a class="btn btn-sm btn-secondary" href="{{ url_for('login.login_page') }}">Login</a>
+                <h6>Already have an account?</h6>
+                <a class="btn btn-sm btn-secondary" href="{{ url_for('login.login_page') }}">Login</a>
             </div>
 
             {{ form.submit(class="btn btn-lg btn-block btn-primary") }}
