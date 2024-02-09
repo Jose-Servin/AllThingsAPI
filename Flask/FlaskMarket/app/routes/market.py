@@ -71,6 +71,7 @@ def market_page():
         owned_items = Item.query.filter_by(owner=current_user.id)
 
         # This redirect runs when we click Market or refresh; we server the market.html page
+        # This is also where we send users after they register
         return render_template(
             "market.html", items=items_data, purchase_form=purchase_form, owned_items=owned_items, selling_form=selling_form
         )

@@ -11,8 +11,8 @@ register_bp = Blueprint("register", __name__)
 def register_page():
     register_form = RegisterForm()
     if request.method == "POST" and register_form.validate():
-        # Because of the setter method, we call password and not
-        # password_hash to create a User
+        # Because of the setter method in our User Model,
+        # we call password and not password_hash to create a User
         user_to_create = User(
             username=register_form.username.data,
             email_address=register_form.email_address.data,
@@ -28,6 +28,7 @@ def register_page():
                 user_to_create.username}",
             category="success",
         )
+        # here we are providing a route not an HTML template
         return redirect(url_for("market.market_page"))
 
     # if the form contains validation errors
