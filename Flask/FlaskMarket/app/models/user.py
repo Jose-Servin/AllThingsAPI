@@ -26,6 +26,7 @@ class User(db.Model, UserMixin):
 
     @password.setter
     def password(self, plain_text_password):
+        # plain_text_password is the register_form.password1.data from our register route.
         self.password_hash = bcrypt.generate_password_hash(plain_text_password).decode(
             "utf-8"
         )

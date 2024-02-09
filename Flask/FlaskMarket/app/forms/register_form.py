@@ -25,6 +25,7 @@ class RegisterForm(FlaskForm):
 
     # Handling existing username error
     # Flask Forms will automatically execute our validate_x() functions; we must make sure x is a form field.
+    # We validate conditions that would go against our User Model and generate SQLAlchemy errors
 
     def validate_username(self, username_to_check):
         """
