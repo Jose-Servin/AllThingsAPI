@@ -9,4 +9,5 @@ logout_bp = Blueprint("logout", __name__)
 def logout_page():
     logout_user()
     flash("You have been logged out!", category="info")
+    # this url_for is calling a route NOT an html template
     return redirect(url_for("home.home_page"))

@@ -7,9 +7,10 @@ from app.forms.sell_item_form import SellItemForm
 
 market_bp = Blueprint("market", __name__)
 
+# Note: decorators are functions that execute before our defined function
+
 
 @market_bp.route("/market", methods=["GET", "POST"])
-# decorators are functions that execute before our defined function
 @login_required
 def market_page():
     purchase_form = PurchaseForm()

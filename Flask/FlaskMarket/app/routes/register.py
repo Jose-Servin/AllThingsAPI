@@ -21,7 +21,7 @@ def register_page():
         # Add the new User to the database
         db.session.add(user_to_create)
         db.session.commit()
-        # After registering login the user and redirect to market.market_page route
+        # After registering, the user is redirect to the market.market_page route
         login_user(user_to_create)
         flash(
             f"Account created successfully! You are now logged in as {
