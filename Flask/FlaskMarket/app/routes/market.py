@@ -22,7 +22,7 @@ def market_page():
         purchased_item_name = request.form.get("purchased_item")
         # To view more info about the form use the __dict__ dunder method.
         # .get() looks at the name attribute and returns the value
-        print(request.form.get("purchased_item"))
+        # print(request.form.get("purchased_item"))
         purchased_item = Item.query.filter_by(name=purchased_item_name).first()
         if purchased_item:
             if current_user.can_purchase(purchased_item):
@@ -45,13 +45,19 @@ def market_page():
         if sold_item:
             if current_user.can_sell(sold_item):
                 sold_item.remove_owner(current_user)
-                flash(f"Congratulations! You sold {
-                      sold_item.name} back to market!", category='success')
+                flash(
+                    f"Congratulations! You sold {
+                        sold_item.name} back to market!",
+                    category='success'
+                )
             else:
-                flash(f"Something went wrong with selling {
-                      sold_item.name}", category='danger')
+                flash(
+                    f"Something went wrong with selling {
+                        sold_item.name}",
+                    category='danger'
+                )
 
-        # This redirect will allow user to continue purchasing items
+        # This redirect will allow user to continue on the market page
         return redirect(url_for("market.market_page"))
 
     if request.method == "GET":
